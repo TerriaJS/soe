@@ -1,3 +1,5 @@
+/* jshint esnext:true */
+
 'use strict';
 
 /*global require*/
@@ -344,6 +346,79 @@ gulp.task('sync-terriajs-dependencies', function() {
     syncDependencies(appPackageJson.devDependencies, terriaPackageJson);
 
     fs.writeFileSync('./package.json', JSON.stringify(appPackageJson, undefined, '  '));
+});
+
+// Builds a catalog by querying the State of Environment private datasets from data.gov.au
+gulp.task('make-catalog', function(cb) {
+    var rp = require('request-promise');
+
+    var items = [];
+    var catalog = {
+        catalog: [
+            {
+                name: "State of the Environment 2016",
+                type: "group",
+                isOpen: true,
+                items: items
+            }
+        ]
+    };
+
+    function ckan(api) {
+        return rp({
+            uri: 'http://data.gov.au/api/3/' + api,
+            headers: {
+                'X-CKAN-API-Key':'256a71bd-2f09-4a48-87bb-fb7af0cc51b7'
+            },
+            json: true
+        });
+
+    }
+
+    ckan('action/organization_show?id=state-of-the-environment&include_datasets=true').then(body => {
+        console.log('Retrieving ' + body.result.packages.length + ' packages.  This may take awhile.');
+
+        function nextPackage(i) {
+            var p = body.result.packages[i];
+            if (!p) {
+                fs.writeFileSync('./wwwroot/init/soe_generated.json', JSON.stringify(catalog, undefined, '  '));
+                console.log('Done');
+                return cb();
+            }
+
+            ckan('action/package_show?id=' + p.name).then(packageBody => {
+                if (packageBody.result.resources.length === 1) {
+                    items.push({
+                        name: packageBody.result.title,
+                        type: "ckan-resource",
+                        url: "https://data.gov.au",
+                        datasetId: packageBody.result.name
+                    });
+                } else {
+                    var subItems = [];
+                    items.push({
+                        name: packageBody.result.title,
+                        type: "group",
+                        items: subItems
+                    });
+
+                    packageBody.result.resources.forEach(resource => {
+                        subItems.push({
+                            name: resource.name,
+                            type: "ckan-resource",
+                            url: "https://data.gov.au",
+                            datasetId: packageBody.result.name,
+                            resourceID: resource.id
+                        });
+                    });
+                }
+
+                nextPackage(i+1);
+            });
+        }
+
+        nextPackage(0);
+    });
 });
 
 function syncDependencies(dependencies, targetJson) {
