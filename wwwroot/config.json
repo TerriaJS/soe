@@ -21,7 +21,7 @@
             url: "#"
         },
         */
-         
+
         // Pop-up disclaimer that will be shown at the start
         // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
         globalDisclaimer: {
@@ -34,7 +34,7 @@
             //devHostRegex: "\\b(staging|preview|test|dev)\\.",
             enableOnLocalhost: true // If false, don't show this when running on localhost
         },
-        
+
         /*
         developerAttribution: {
             text: "Your organisation",
@@ -46,7 +46,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
             "",
-            "<a target=\"_blank\" href=\"http://www.nicta.com.au\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+            "<a target=\"_blank\" href=\"http://http://doesoeahlgge33pv.devcloud.acquia-sites.com/\"><img src=\"images/logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
             ""
         ],
         // Shown when things go wrong.
