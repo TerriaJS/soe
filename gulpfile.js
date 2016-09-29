@@ -223,7 +223,7 @@ gulp.task('make-package', function() {
         preserveTimestamps: true
     };
 
-    fs.copySync('proxyauth.json', workingDir, copyOptions);
+    fs.copySync('proxyauth.json', path.join(workingDir, 'proxyauth.json'), copyOptions);
     fs.copySync('wwwroot', path.join(workingDir, 'wwwroot'), copyOptions);
     fs.copySync('node_modules', path.join(workingDir, 'node_modules'), copyOptions);
 
