@@ -6,6 +6,86 @@
       "isOpen": true,
       "items": [
         {
+          "name": "2016 SoE Coasts Protected vegetation remaining",
+          "type": "group",
+          "items": [
+            {
+              "name": "Vegetation remaining change 2011 to 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-protected-vegetation-remaining",
+              "resourceID": "fa3559d6-7e8f-4ce4-9340-1540ce927237"
+            },
+            {
+              "name": "Vegetation remaining 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-protected-vegetation-remaining",
+              "resourceID": "cef50412-8655-414a-82fe-98344f4c943a"
+            }
+          ]
+        },
+        {
+          "name": "2016 SoE Coasts Protected vegetation",
+          "type": "group",
+          "items": [
+            {
+              "name": "Protected vegetation 2016 level remaining",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-protected-vegetation",
+              "resourceID": "e230ed9e-6c13-45a4-b20f-3e6b93f1f524"
+            },
+            {
+              "name": "Change in vegetation remaining 2011 to 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-protected-vegetation",
+              "resourceID": "a9eb58fc-a707-4efe-be04-b633b10cabaa"
+            }
+          ]
+        },
+        {
+          "name": "2016 SoE Coasts Number of threatened species that occur within 50 kilometres of the coast",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-coasts-number-of-threatened-species-that-occur-within-50-kilometres-of-the-coast"
+        },
+        {
+          "name": "2016 SoE Coasts Annual proportion of visitors by type of nature activity 2008–15",
+          "type": "group",
+          "items": [
+            {
+              "name": "Nature based activity 2008 to 2015 international",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
+              "resourceID": "5942a7b5-c6b5-4f81-87b5-27e0036579cd"
+            },
+            {
+              "name": "Nature based activity 2008 to 2015 domestic day",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
+              "resourceID": "b1223f50-b4f4-49f4-b8a8-c4190bb6bc5c"
+            },
+            {
+              "name": "Nature based activity 2008 to 2015 domestic night",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
+              "resourceID": "6301c0e9-4564-4190-b350-426b8b791db3"
+            },
+            {
+              "name": "Nature based tourism activity 2008 to 2015",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
+              "resourceID": "2d59f5f4-1501-4c1a-9fca-07d28ed0ae14"
+            }
+          ]
+        },
+        {
           "name": "2016 SoE Drivers Energy decoupling in Australia, 2009-10 to 2013-14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -637,26 +717,6 @@
           ]
         },
         {
-          "name": "2016 SoE Coasts Protected vegetation remaining",
-          "type": "group",
-          "items": [
-            {
-              "name": "Vegetation remaining change 2011 to 2016",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-protected-vegetation-remaining",
-              "resourceID": "fa3559d6-7e8f-4ce4-9340-1540ce927237"
-            },
-            {
-              "name": "Vegetation remaining 2016",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-protected-vegetation-remaining",
-              "resourceID": "cef50412-8655-414a-82fe-98344f4c943a"
-            }
-          ]
-        },
-        {
           "name": "2016 SoE Atmosphere Hourly CO and 24 hour PM2.5 concentrations measured during the Hazelwood mine fire, 2014",
           "type": "group",
           "items": [
@@ -689,40 +749,6 @@
           "datasetId": "2016-soe-atmosphere-deaths-attributable-to-air-pollution-by-disease-2011"
         },
         {
-          "name": "2016 SoE Coasts Annual proportion of visitors by type of nature activity 2008–15",
-          "type": "group",
-          "items": [
-            {
-              "name": "Nature based activity 2008 to 2015 international",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "5942a7b5-c6b5-4f81-87b5-27e0036579cd"
-            },
-            {
-              "name": "Nature based activity 2008 to 2015 domestic day",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "b1223f50-b4f4-49f4-b8a8-c4190bb6bc5c"
-            },
-            {
-              "name": "Nature based activity 2008 to 2015 domestic night",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "6301c0e9-4564-4190-b350-426b8b791db3"
-            },
-            {
-              "name": "Nature based tourism activity 2008 to 2015",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "2d59f5f4-1501-4c1a-9fca-07d28ed0ae14"
-            }
-          ]
-        },
-        {
           "name": "2016 SoE Coasts Real value of Australian wild-catch production 2003–04 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -735,26 +761,6 @@
           "datasetId": "2016-soe-antarctic-environment-estimated-emissions-of-co2-for-the-aust-antarctic-program"
         },
         {
-          "name": "2016 SoE Coasts Protected vegetation",
-          "type": "group",
-          "items": [
-            {
-              "name": "Protected vegetation 2016 level remaining",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-protected-vegetation",
-              "resourceID": "e230ed9e-6c13-45a4-b20f-3e6b93f1f524"
-            },
-            {
-              "name": "Change in vegetation remaining 2011 to 2016",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-protected-vegetation",
-              "resourceID": "a9eb58fc-a707-4efe-be04-b633b10cabaa"
-            }
-          ]
-        },
-        {
           "name": "2016 SoE Antarctic environment Annual fuel usage for the Australian stations, 1997 to 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -765,12 +771,6 @@
           "type": "ckan-resource",
           "url": "https://data.gov.au",
           "datasetId": "2016-soe-coasts-abundance-of-shoreline-litter-or-debris-in-australia"
-        },
-        {
-          "name": "2016 SoE Coasts Number of threatened species that occur within 50 kilometres of the coast",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-coasts-number-of-threatened-species-that-occur-within-50-kilometres-of-the-coast"
         },
         {
           "name": "2016 SoE Coasts Change in cadastral parcels relative to distance from the coast",
