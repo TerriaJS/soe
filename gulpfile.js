@@ -393,7 +393,8 @@ gulp.task('make-catalog', function(cb) {
                         name: packageBody.result.title,
                         type: "ckan-resource",
                         url: "https://data.gov.au",
-                        datasetId: packageBody.result.name
+                        datasetId: packageBody.result.name,
+                        cacheDuration: '0d'
                     });
                 } else {
                     var subItems = [];
@@ -409,7 +410,8 @@ gulp.task('make-catalog', function(cb) {
                             type: "ckan-resource",
                             url: "https://data.gov.au",
                             datasetId: packageBody.result.name,
-                            resourceID: resource.id
+                            resourceID: resource.id,
+                            cacheDuration: '0d'
                         });
                     });
                 }
