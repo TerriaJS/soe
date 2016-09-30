@@ -6,23 +6,37 @@
       "isOpen": true,
       "items": [
         {
-          "name": "2016 SoE Inland Waters Heat Map of observed carp extent",
+          "name": "2016 SoE Inland Waters Heat Map Observed Carp Extent2",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-inland-waters-heat-map-observed-carp-extent2",
+          "cacheDuration": "0d"
+        },
+        {
+          "name": "2016 SoE Drivers Australian energy intensity and energy productivity",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "soe-2016-drivers-australian-energy-intensity-and-energy-productivity",
+          "cacheDuration": "0d"
+        },
+        {
+          "name": "2016 SoE Atmosphere Hourly CO and 24 hour PM2.5 concentrations measured during the Hazelwood mine fire, 2014",
           "type": "group",
           "items": [
             {
-              "name": "Heat Map of Observed Carp Extent",
+              "name": "2016 SoE Atmosphere 24 hour PM2.5 concentrations measured during the Hazelwood mine fire, 2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
-              "datasetId": "2016-so",
-              "resourceID": "5b85446d-e56a-4211-9c1c-a613c0dbc29c",
+              "datasetId": "2016-soe-atmosphere-hourly-co-and-24h-pm2-5-concentrations-measured-during-the-hazelwood-mine-fire",
+              "resourceID": "e6d29769-f636-4b2f-abb4-4b61ffae5ff5",
               "cacheDuration": "0d"
             },
             {
-              "name": "Carp Extent ALA Point Data",
+              "name": "2016 SoE Atmosphere Hourly CO concentrations measured during the Hazelwood mine fire, 2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
-              "datasetId": "2016-so",
-              "resourceID": "89165cda-820a-4bcb-9cfc-13e2d8495d74",
+              "datasetId": "2016-soe-atmosphere-hourly-co-and-24h-pm2-5-concentrations-measured-during-the-hazelwood-mine-fire",
+              "resourceID": "ef2bbd6b-222a-4b31-a657-70dde934b748",
               "cacheDuration": "0d"
             }
           ]
@@ -181,13 +195,6 @@
           "type": "ckan-resource",
           "url": "https://data.gov.au",
           "datasetId": "2016-soe-drivers-australia-s-gross-value-added-by-industry",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Drivers Australian energy intensity and energy productivity",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "soe-2016-drivers-australian-energy-intensity-and-energy-productivity",
           "cacheDuration": "0d"
         },
         {
@@ -817,28 +824,6 @@
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
               "resourceID": "40069cef-f01f-4c6e-a2cc-a8c4d708f2c2",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
-          "name": "2016 SoE Atmosphere Hourly CO and 24 hour PM2.5 concentrations measured during the Hazelwood mine fire, 2014",
-          "type": "group",
-          "items": [
-            {
-              "name": "2016 SoE Atmosphere 24 hour PM2.5 concentrations measured during the Hazelwood mine fire, 2014",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-atmosphere-hourly-co-and-24h-pm2-5-concentrations-measured-during-the-hazelwood-mine-fire",
-              "resourceID": "e6d29769-f636-4b2f-abb4-4b61ffae5ff5",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "2016 SoE Atmosphere Hourly CO concentrations measured during the Hazelwood mine fire, 2014",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-atmosphere-hourly-co-and-24h-pm2-5-concentrations-measured-during-the-hazelwood-mine-fire",
-              "resourceID": "ef2bbd6b-222a-4b31-a657-70dde934b748",
               "cacheDuration": "0d"
             }
           ]
