@@ -390,6 +390,7 @@ gulp.task('make-catalog', function(cb) {
             ckan('action/package_show?id=' + p.name).then(packageBody => {
                 if (packageBody.result.resources.length === 1) {
                     items.push({
+                        id: packageBody.result.name,
                         name: packageBody.result.title,
                         type: "ckan-resource",
                         url: "https://data.gov.au",
@@ -406,11 +407,12 @@ gulp.task('make-catalog', function(cb) {
 
                     packageBody.result.resources.forEach(resource => {
                         subItems.push({
+                            id: resource.id,
                             name: resource.name,
                             type: "ckan-resource",
                             url: "https://data.gov.au",
                             datasetId: packageBody.result.name,
-                            resourceID: resource.id,
+                            resourceId: resource.id,
                             cacheDuration: '0d'
                         });
                     });

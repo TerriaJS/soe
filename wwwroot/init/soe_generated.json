@@ -6,6 +6,682 @@
       "isOpen": true,
       "items": [
         {
+          "id": "2016-soe-marine-mean-concentrations-total-suspended-solids-at-imos-stations",
+          "name": "2016 SoE Marine Mean concentrations total suspended solids at 9 IMOS stations",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-marine-mean-concentrations-total-suspended-solids-at-imos-stations",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-marine-mean-secchi-disk-depths-at-9-imos-stations",
+          "name": "2016 SoE Marine Mean SECCHI disk depths at 9 IMOS Stations",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-marine-mean-secchi-disk-depths-at-9-imos-stations",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-marine-seasonally-detrended-secchi-disk-depths-at-port-hacking",
+          "name": "2016 SoE Marine Seasonally detrended SECCHI disk depths at Port Hacking",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-marine-seasonally-detrended-secchi-disk-depths-at-port-hacking",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-land-extent-of-modification-of-major-vegetation-groups-as-assessed-by-vast",
+          "name": "2016 soe Land Extent of modification of major vegetation groups, as assessed by VAST",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-land-extent-of-modification-of-major-vegetation-groups-as-assessed-by-vast",
+          "cacheDuration": "0d"
+        },
+        {
+          "name": "2016 SoE Land Percentage of total deforestation in each decade by land use as of 2005-06 and land tenure as of 1993",
+          "type": "group",
+          "items": [
+            {
+              "id": "8f599774-d165-4179-b31b-ddf3e229c3ca",
+              "name": "Deforestation by land tenure",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-land-pct-total-deforestation-decade-by-land-use-2005-06-land-tenure-as-of-1993",
+              "resourceId": "8f599774-d165-4179-b31b-ddf3e229c3ca",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "01fb385e-6ff9-4094-8fd8-560bd88090ec",
+              "name": "Deforestation by land use",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-land-pct-total-deforestation-decade-by-land-use-2005-06-land-tenure-as-of-1993",
+              "resourceId": "01fb385e-6ff9-4094-8fd8-560bd88090ec",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "id": "2016-soe-land-waste-generation-population-and-gva-1997-2012",
+          "name": "2016 SoE Land Waste generation population and GVA 1997 - 2012",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-land-waste-generation-population-and-gva-1997-2012",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-land-first-time-forest-conversion-and-re-clearing-in-australia-1990-to-2014",
+          "name": "2016 SoE Land First-time forest conversion and re-clearing in Australia 1990 to 2014",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-land-first-time-forest-conversion-and-re-clearing-in-australia-1990-to-2014",
+          "cacheDuration": "0d"
+        },
+        {
+          "name": "2016 SoE Land Amount of deforestation by type and decade 1972-2014 excludes ACT",
+          "type": "group",
+          "items": [
+            {
+              "id": "942ea459-417a-4c4b-bd83-45d16db430b6",
+              "name": "Primary deforestation trends",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-land-amount-of-deforestation-by-type-and-decade-1972-2014-excludes-act",
+              "resourceId": "942ea459-417a-4c4b-bd83-45d16db430b6",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "2dafd7c5-af0b-476d-b7bd-3fc38de6e807",
+              "name": "Regrowth deforestation trends",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-land-amount-of-deforestation-by-type-and-decade-1972-2014-excludes-act",
+              "resourceId": "2dafd7c5-af0b-476d-b7bd-3fc38de6e807",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "acc9c8d2-f6e1-4cae-84f2-30ec0a5183d2",
+              "name": "Total deforestation trends",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-land-amount-of-deforestation-by-type-and-decade-1972-2014-excludes-act",
+              "resourceId": "acc9c8d2-f6e1-4cae-84f2-30ec0a5183d2",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "name": "2016 SoE Inland Waters Rain Deciles 2012",
+          "type": "group",
+          "items": [
+            {
+              "id": "2f40a203-9305-4fe3-9b21-57751c65dd0f",
+              "name": "2016-soe-inland-waters-rain-deciles-2012",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
+              "resourceId": "2f40a203-9305-4fe3-9b21-57751c65dd0f",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "255ec60a-eccb-4cff-b004-c4401a3325ef",
+              "name": "2016 SoE Inland Waters Rain Deciles 2012 - Preview this Dataset (WMS)",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
+              "resourceId": "255ec60a-eccb-4cff-b004-c4401a3325ef",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "94a02ac7-297c-46d7-9d07-c7ef9801c8ed",
+              "name": "2016 SoE Inland Waters Rain Deciles 2012 Web Feature Service API Link",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
+              "resourceId": "94a02ac7-297c-46d7-9d07-c7ef9801c8ed",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "928a64d9-905a-4ec5-bb8e-585fbba0c7b4",
+              "name": "2016 SoE Inland Waters Rain Deciles 2012 CSV",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
+              "resourceId": "928a64d9-905a-4ec5-bb8e-585fbba0c7b4",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "f10b3027-1ec7-492a-af39-aa7e26b60520",
+              "name": "2016 SoE Inland Waters Rain Deciles 2012 GeoJSON",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
+              "resourceId": "f10b3027-1ec7-492a-af39-aa7e26b60520",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "9021be75-a721-4a1d-98e2-75646ba9bafe",
+              "name": "2016 SoE Inland Waters Rain Deciles 2012 GeoJSON",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
+              "resourceId": "9021be75-a721-4a1d-98e2-75646ba9bafe",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "name": "2016 SoE Marine Increase in the number of cargo ships involved in coastal or international voyages that made port calls",
+          "type": "group",
+          "items": []
+        },
+        {
+          "name": "2016 SoE Coasts Annual proportion of visitors by type of nature activity 2008–15",
+          "type": "group",
+          "items": [
+            {
+              "id": "2d59f5f4-1501-4c1a-9fca-07d28ed0ae14",
+              "name": "Nature based tourism activity 2008 to 2015",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
+              "resourceId": "2d59f5f4-1501-4c1a-9fca-07d28ed0ae14",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "563d1111-ac3c-4b98-9180-70c22441d025",
+              "name": "Tourist numbers",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
+              "resourceId": "563d1111-ac3c-4b98-9180-70c22441d025",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "id": "2016-soe-biodiversity-land-areas-cleared-in-australia-since-1972",
+          "name": "2016 SoE Biodiversity First time forest clearing and re-clearing in Australia since 1973",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-land-areas-cleared-in-australia-since-1972",
+          "cacheDuration": "0d"
+        },
+        {
+          "name": "2016 SoE Biodiversity EPBC listed fauna species 2011 and 2015",
+          "type": "group",
+          "items": [
+            {
+              "id": "0ff2c8fe-bbeb-450d-af76-d1e1205e84cc",
+              "name": "Number of EPBC listed fauna",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
+              "resourceId": "0ff2c8fe-bbeb-450d-af76-d1e1205e84cc",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "d1d2085a-688d-42e2-8413-ae7be1f011ed",
+              "name": "Numbers of EPBC listed birds",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
+              "resourceId": "d1d2085a-688d-42e2-8413-ae7be1f011ed",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "75d65793-556c-47cd-af1c-d35efbbff094",
+              "name": "Numbers of EPBC listed fish",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
+              "resourceId": "75d65793-556c-47cd-af1c-d35efbbff094",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "28418945-00bf-4319-a5b8-cb8204bd444f",
+              "name": "Numbers of EPBC listed mammals",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
+              "resourceId": "28418945-00bf-4319-a5b8-cb8204bd444f",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "0908dfa6-1253-4123-b9c2-cf1ecff5ce28",
+              "name": "Numbers of EPBC listed reptiles",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
+              "resourceId": "0908dfa6-1253-4123-b9c2-cf1ecff5ce28",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "40069cef-f01f-4c6e-a2cc-a8c4d708f2c2",
+              "name": "Numbers of EPBC listed species other",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
+              "resourceId": "40069cef-f01f-4c6e-a2cc-a8c4d708f2c2",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "id": "2016-soe-biodiversity-epbc-ecological-communities-national-reserve-system",
+          "name": "2016 SoE Biodiversity Proportion of EPBC listed ecological communities represented in the national reserve system",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-epbc-ecological-communities-national-reserve-system",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-expenditure-by-the-department-of-the-environment-and-energy-on-cc-research",
+          "name": "2016 SoE Biodiversity Expenditure by the Australian Government Department of the Environment and Energy on climate change research programmes between 2012-13 and 2015-16, plus forward estimates",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-expenditure-by-the-department-of-the-environment-and-energy-on-cc-research",
+          "cacheDuration": "0d"
+        },
+        {
+          "name": "2016 SoE Biodiversity WWF-Australia's estimates of how well area-based targets for protection of terrestial ecosystems have been met",
+          "type": "group",
+          "items": [
+            {
+              "id": "f9626560-ec89-4c12-9a7c-da93677508b9",
+              "name": "Ecosystem gaps analysis 2010",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
+              "resourceId": "f9626560-ec89-4c12-9a7c-da93677508b9",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "1db4b916-4e0e-465d-be94-ee56b0cbe7a9",
+              "name": "Ecosystem gaps analysis 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
+              "resourceId": "1db4b916-4e0e-465d-be94-ee56b0cbe7a9",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "e3a264d7-da5c-4fc4-b410-8af95b5d44ae",
+              "name": "Ecosystem gaps by jurisdiction analysis 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
+              "resourceId": "e3a264d7-da5c-4fc4-b410-8af95b5d44ae",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "805830c1-d6ef-4ddc-8ec0-d6813e0bfce4",
+              "name": "Ecosystem gaps by jurisdiction analysis 2010",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
+              "resourceId": "805830c1-d6ef-4ddc-8ec0-d6813e0bfce4",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "c6f12108-34de-442f-92f8-b608092b80de",
+              "name": "Ecosystems gap filled by jurisdiciton analysis 2010-16",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
+              "resourceId": "c6f12108-34de-442f-92f8-b608092b80de",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "c192bd36-98b3-4c05-9355-3144b78514e6",
+              "name": "Ecosystem analysis gap filled 2010 to 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
+              "resourceId": "c192bd36-98b3-4c05-9355-3144b78514e6",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "name": "2016 SoE Biodiversity Adequacy of protection of nationally threatened species",
+          "type": "group",
+          "items": [
+            {
+              "id": "f7d3463d-3492-4297-9125-6f72925e6c09",
+              "name": "Adequacy of protection of nationally threatened species in 2016",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-adequacy-of-protection-of-nationally-threatened-species",
+              "resourceId": "f7d3463d-3492-4297-9125-6f72925e6c09",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "f9e6f6d2-47d0-4ee6-9122-ab6a3e4894b2",
+              "name": "Adequacy of protection of nationally threatened species in 2010",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "2016-soe-biodiversity-adequacy-of-protection-of-nationally-threatened-species",
+              "resourceId": "f9e6f6d2-47d0-4ee6-9122-ab6a3e4894b2",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "name": "2016 SoE Biodiversity Eastern Australian waterbird survey results (1983 to 2015)",
+          "type": "group",
+          "items": [
+            {
+              "id": "53a24550-9d2a-4cc8-8895-f5cbc3c615a2",
+              "name": "Waterbird breeding abundance ",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "eastern-australian-waterbird-survey-results-1983-to-2014",
+              "resourceId": "53a24550-9d2a-4cc8-8895-f5cbc3c615a2",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "57dad0e1-d8b4-4d9c-9d0e-67a182a3d427",
+              "name": "Breeding species richness",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "eastern-australian-waterbird-survey-results-1983-to-2014",
+              "resourceId": "57dad0e1-d8b4-4d9c-9d0e-67a182a3d427",
+              "cacheDuration": "0d"
+            },
+            {
+              "id": "bd3fcf86-03de-4b4f-ba5d-6d22035c876f",
+              "name": "Total waterbird abundance",
+              "type": "ckan-resource",
+              "url": "https://data.gov.au",
+              "datasetId": "eastern-australian-waterbird-survey-results-1983-to-2014",
+              "resourceId": "bd3fcf86-03de-4b4f-ba5d-6d22035c876f",
+              "cacheDuration": "0d"
+            }
+          ]
+        },
+        {
+          "id": "2016-soe-biodiversity-number-of-epbc-listed-plant-species-in-2011-and-2016",
+          "name": "2016 SoE Biodiversity Number of EPBC listed plant species in 2011 and 2015",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-number-of-epbc-listed-plant-species-in-2011-and-2016",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-australia-s-forest-area-changes-from-2005",
+          "name": "2016 SoE Biodiversity Australia's forest area (1990-2012) compared to 2005 forest area",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-australia-s-forest-area-changes-from-2005",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-pressures-affecting-threatened-species",
+          "name": "2016 SoE Biodiversity Pressures affecting species listed as threatened nationally under the EPBC Act",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-pressures-affecting-threatened-species",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "biodiversity-proportion-indigenous-govt-owned-jointly-held-privately-protected-areas-in-the-nrs",
+          "name": "2016 SoE Biodiversity Proportion of indigenous, government owned, jointly held and privately protected areas in the national reserve system",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "biodiversity-proportion-indigenous-govt-owned-jointly-held-privately-protected-areas-in-the-nrs",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-funding-abres-bush-blitz",
+          "name": "2016 SoE Biodiversity Funding for ABRS and Bush Blitz, 2009/10 to 2015/16",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-funding-abres-bush-blitz",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-total-wetland-area-index-1983-to-2014",
+          "name": "2016 SoE Biodiversity Total wetland area index 1983 to 2015",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-total-wetland-area-index-1983-to-2014",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-numbers-of-curlew-sandpipers-in-southeast-tasmania-1973-2016",
+          "name": "2016 SoE Biodiversity Numbers of Curlew sandpipers in southeast Tasmania, 1973 - 2016",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-numbers-of-curlew-sandpipers-in-southeast-tasmania-1973-2016",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "solutions-and-innovations-over-the-next-10-years",
+          "name": "2016 SoE Biodiversity The five most important new solutions and innovations with the potential to improve biodiversity management over the next 10 years",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "solutions-and-innovations-over-the-next-10-years",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-australian-government-expenditure-on-biodiversity-management",
+          "name": "2016 SoE Biodiversity Overall expenditure on biodiversity management by the Australian Government, 2009-10 to 2015-16",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-australian-government-expenditure-on-biodiversity-management",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-the-5-most-important-knowledge-gaps-hindering-effective-management-of-biodiversity",
+          "name": "2016 SoE Biodiversity The five most important knowledge gaps hindering effective management of biodiversity",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-the-5-most-important-knowledge-gaps-hindering-effective-management-of-biodiversity",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-net-increases-in-the-number-of-epbc-listed-species-since-2000",
+          "name": "2016 SoE Biodiversity Net increases in the number of EPBC listed species since 2000",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-net-increases-in-the-number-of-epbc-listed-species-since-2000",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-cumulative-number-of-extinct-mammal-species",
+          "name": "2016 SoE Biodiversity Cumulative number of extinct mammal species",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-cumulative-number-of-extinct-mammal-species",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-household-energy-per-week-by-energy-source",
+          "name": "2016 SoE Built environment Household energy $ per week by energy source",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-household-energy-per-week-by-energy-source",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "projected-population-for-australian-capital-cities-medium-growth-scenario",
+          "name": "Projected population for Australian capital cities, medium growth, scenario",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "projected-population-for-australian-capital-cities-medium-growth-scenario",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-waste-per-capita-per-state-2010-2011",
+          "name": "2016 SoE Built environment Waste per capita per state 2010 - 2011",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-waste-per-capita-per-state-2010-2011",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-categories-of-land-cover-by-urban-regions",
+          "name": "2016 SoE Built environment Categories of land cover by urban regions",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-categories-of-land-cover-by-urban-regions",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "distributed-water-use-and-expenditure-households-and-selected-other-industries-2009-to-2014",
+          "name": "2016 SoE Built environment Distributed water use and expenditure households and selected other industries 2009 to 2014",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "distributed-water-use-and-expenditure-households-and-selected-other-industries-2009-to-2014",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-water-consumption-in-households-selected-industries-2008-to-2014",
+          "name": "2016 SoE Built environment Water consumption in households/selected industries 2008 to 2014",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-water-consumption-in-households-selected-industries-2008-to-2014",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-household-energy-use-and-expenditure-by-energy-product-2008-09-to-2013-14",
+          "name": "2016 SoE Built environment hh energy use and expenditure, by energy product 2008–09 to 2013–14",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-household-energy-use-and-expenditure-by-energy-product-2008-09-to-2013-14",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-journey-to-work-by-transport-mode-by-capital-city-2012",
+          "name": "2016 SoE Built environment Journey to work or study by transport mode by capital city 2012",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-journey-to-work-by-transport-mode-by-capital-city-2012",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-energy-intensity-selected-industries-2002-03-to-2013-14",
+          "name": "2016 SoE Built environment Energy intensity selected industries 2002–03 to 2013–14",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-energy-intensity-selected-industries-2002-03-to-2013-14",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-avg-cmtng-trip-duration-and-prevalence-2011",
+          "name": "2016 SoE Built environment Average commuting trip duration and prevalence of lengthy commutes selected metropolitan and regional cities 2011",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-avg-cmtng-trip-duration-and-prevalence-2011",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-net-energy-use-per-australian-household-2002-03-to-2013-14",
+          "name": "2016 SoE Built environment Net energy use per Australian household, 2002–03 to 2013–14",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-net-energy-use-per-australian-household-2002-03-to-2013-14",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-household-energy-intensity-2002-03-to-2013-14",
+          "name": "2016 SoE Built environment Household energy intensity 2002–03 to 2013–14",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-household-energy-intensity-2002-03-to-2013-14",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-household-insulation-2002-14",
+          "name": "2016 SoE Built environment Household insulation 2002–14",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-household-insulation-2002-14",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-domestic-net-energy-use-industry-and-households-2009-10-to-2013-14-abs",
+          "name": "2016 SoE Built environment Domestic net energy use, industry and households, 2009–10 to 2013–14 (ABS)",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-domestic-net-energy-use-industry-and-households-2009-10-to-2013-14-abs",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "soe-built-environment-household-water-consumption-by-source-2009-to-2014",
+          "name": "2016 SoE Built environment Household water consumption by source 2009 to 2014",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "soe-built-environment-household-water-consumption-by-source-2009-to-2014",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-satisfaction-with-drinking-water",
+          "name": "2016 SoE Built environment Satisfaction with drinking water",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-satisfaction-with-drinking-water",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-car-ownership-over-time-1971-to-2015",
+          "name": "2016 SoE Built environment Passenger car ownership Australia 1971 to 2015",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-car-ownership-over-time-1971-to-2015",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-built-environment-average-commuting-distance-by-place-of-residence-major-cities-2011",
+          "name": "2016 SoE Built environment Average commuting distance by place of residence major cities 2011",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-built-environment-average-commuting-distance-by-place-of-residence-major-cities-2011",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-marine-annual-fishing-effort-across-australian-jurisdictions-1970-2014",
+          "name": "2016 SoE Marine Annual fishing effort (number of hours) of commercial trawl and dredge fisheries across Australian government and state and territory jurisdictions 1970-2014",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-marine-annual-fishing-effort-across-australian-jurisdictions-1970-2014",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-synthesis-selected-socio-economic-and-environmental-measures-1996-97-to-2013-14",
+          "name": "2016 SoE Synthesis Selected socio-economic and environmental measures, 1996–97 to 2013–14",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-synthesis-selected-socio-economic-and-environmental-measures-1996-97-to-2013-14",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-synthesis-proportion-of-indigenous-government-owned-jointly-held",
+          "name": "2016 SoE Synthesis Proportion of indigenous, government owned, jointly held and privately protected areas in the national reserve system",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-synthesis-proportion-of-indigenous-government-owned-jointly-held",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-biodiversity-funding-for-tern-ala-and-imos-between-2009-10-and-2015-16",
+          "name": "2016 SoE Biodiversity Funding for TERN, ALA and IMOS between 2009-10 and 2015-16",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-biodiversity-funding-for-tern-ala-and-imos-between-2009-10-and-2015-16",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-drivers-changes-in-australian-gdp-population-and-waste-generation-1996-97-to-2012-13",
+          "name": "2016 SoE Drivers Changes in Australian gross domestic product, population and waste generation, 1996–97 to 2012–13",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "datasetId": "2016-soe-drivers-changes-in-australian-gdp-population-and-waste-generation-1996-97-to-2012-13",
+          "cacheDuration": "0d"
+        },
+        {
+          "id": "2016-soe-inland-waters-heat-map-observed-carp-extent2",
           "name": "2016 SoE Inland Waters Heat Map Observed Carp Extent2",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -13,6 +689,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "soe-2016-drivers-australian-energy-intensity-and-energy-productivity",
           "name": "2016 SoE Drivers Australian energy intensity and energy productivity",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -24,19 +701,21 @@
           "type": "group",
           "items": [
             {
+              "id": "e6d29769-f636-4b2f-abb4-4b61ffae5ff5",
               "name": "2016 SoE Atmosphere 24 hour PM2.5 concentrations measured during the Hazelwood mine fire, 2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-hourly-co-and-24h-pm2-5-concentrations-measured-during-the-hazelwood-mine-fire",
-              "resourceID": "e6d29769-f636-4b2f-abb4-4b61ffae5ff5",
+              "resourceId": "e6d29769-f636-4b2f-abb4-4b61ffae5ff5",
               "cacheDuration": "0d"
             },
             {
+              "id": "ef2bbd6b-222a-4b31-a657-70dde934b748",
               "name": "2016 SoE Atmosphere Hourly CO concentrations measured during the Hazelwood mine fire, 2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-hourly-co-and-24h-pm2-5-concentrations-measured-during-the-hazelwood-mine-fire",
-              "resourceID": "ef2bbd6b-222a-4b31-a657-70dde934b748",
+              "resourceId": "ef2bbd6b-222a-4b31-a657-70dde934b748",
               "cacheDuration": "0d"
             }
           ]
@@ -46,19 +725,21 @@
           "type": "group",
           "items": [
             {
+              "id": "fa3559d6-7e8f-4ce4-9340-1540ce927237",
               "name": "Vegetation remaining change 2011 to 2016",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-protected-vegetation-remaining",
-              "resourceID": "fa3559d6-7e8f-4ce4-9340-1540ce927237",
+              "resourceId": "fa3559d6-7e8f-4ce4-9340-1540ce927237",
               "cacheDuration": "0d"
             },
             {
+              "id": "cef50412-8655-414a-82fe-98344f4c943a",
               "name": "Vegetation remaining 2016",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-protected-vegetation-remaining",
-              "resourceID": "cef50412-8655-414a-82fe-98344f4c943a",
+              "resourceId": "cef50412-8655-414a-82fe-98344f4c943a",
               "cacheDuration": "0d"
             }
           ]
@@ -68,24 +749,27 @@
           "type": "group",
           "items": [
             {
+              "id": "e230ed9e-6c13-45a4-b20f-3e6b93f1f524",
               "name": "Protected vegetation 2016 level remaining",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-protected-vegetation",
-              "resourceID": "e230ed9e-6c13-45a4-b20f-3e6b93f1f524",
+              "resourceId": "e230ed9e-6c13-45a4-b20f-3e6b93f1f524",
               "cacheDuration": "0d"
             },
             {
+              "id": "a9eb58fc-a707-4efe-be04-b633b10cabaa",
               "name": "Change in vegetation remaining 2011 to 2016",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-protected-vegetation",
-              "resourceID": "a9eb58fc-a707-4efe-be04-b633b10cabaa",
+              "resourceId": "a9eb58fc-a707-4efe-be04-b633b10cabaa",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-coasts-number-of-threatened-species-that-occur-within-50-kilometres-of-the-coast",
           "name": "2016 SoE Coasts Number of threatened species that occur within 50 kilometres of the coast",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -93,44 +777,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Coasts Annual proportion of visitors by type of nature activity 2008–15",
-          "type": "group",
-          "items": [
-            {
-              "name": "Nature based activity 2008 to 2015 international",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "5942a7b5-c6b5-4f81-87b5-27e0036579cd",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Nature based activity 2008 to 2015 domestic day",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "b1223f50-b4f4-49f4-b8a8-c4190bb6bc5c",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Nature based activity 2008 to 2015 domestic night",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "6301c0e9-4564-4190-b350-426b8b791db3",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Nature based tourism activity 2008 to 2015",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-coasts-annual-proportion-of-visitors-by-type-of-nature-activity-2008to15",
-              "resourceID": "2d59f5f4-1501-4c1a-9fca-07d28ed0ae14",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
+          "id": "energy-decoupling-in-australia-2009-10-to-2013-14",
           "name": "2016 SoE Drivers Energy decoupling in Australia, 2009-10 to 2013-14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -142,48 +789,54 @@
           "type": "group",
           "items": [
             {
+              "id": "80d0c08f-d421-4af5-9b0b-27edac48bdd1",
               "name": "2016 SoE Coasts abundance fish RLS marine Fish Batemans Marine Park",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "soe-2016-coasts-abundance-fish-reef-life-survey-marine-fish",
-              "resourceID": "80d0c08f-d421-4af5-9b0b-27edac48bdd1",
+              "resourceId": "80d0c08f-d421-4af5-9b0b-27edac48bdd1",
               "cacheDuration": "0d"
             },
             {
+              "id": "bdfdedae-9380-43b8-ba86-353ce85b8a58",
               "name": "2016 SoE Coasts abundance fish rls marine fish Jervis Bay",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "soe-2016-coasts-abundance-fish-reef-life-survey-marine-fish",
-              "resourceID": "bdfdedae-9380-43b8-ba86-353ce85b8a58",
+              "resourceId": "bdfdedae-9380-43b8-ba86-353ce85b8a58",
               "cacheDuration": "0d"
             },
             {
+              "id": "7baa233b-ba2e-4285-bd9c-f491352ca8d0",
               "name": "2016 SoE Coasts abundance fish rls marine fish Port Phillip",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "soe-2016-coasts-abundance-fish-reef-life-survey-marine-fish",
-              "resourceID": "7baa233b-ba2e-4285-bd9c-f491352ca8d0",
+              "resourceId": "7baa233b-ba2e-4285-bd9c-f491352ca8d0",
               "cacheDuration": "0d"
             },
             {
+              "id": "09ec6e1e-3bfd-4811-bf37-f8c42ca27d5c",
               "name": "2016 SoE Coasts abundance fish rls marine fish Port Stephens",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "soe-2016-coasts-abundance-fish-reef-life-survey-marine-fish",
-              "resourceID": "09ec6e1e-3bfd-4811-bf37-f8c42ca27d5c",
+              "resourceId": "09ec6e1e-3bfd-4811-bf37-f8c42ca27d5c",
               "cacheDuration": "0d"
             },
             {
+              "id": "39c2e5c8-bac2-4d6c-a094-7ba7bc41ab46",
               "name": "2016 SoE Coasts abundance fish rls marine fish Sydney",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "soe-2016-coasts-abundance-fish-reef-life-survey-marine-fish",
-              "resourceID": "39c2e5c8-bac2-4d6c-a094-7ba7bc41ab46",
+              "resourceId": "39c2e5c8-bac2-4d6c-a094-7ba7bc41ab46",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "historic-population-growth",
           "name": "2016 SoE Drivers Historic annual population growth, Australia, December 1860 to December 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -191,6 +844,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-drivers-australia-s-gross-value-added-by-industry",
           "name": "2016 SoE Drivers Australia's gross value added by industry",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -198,6 +852,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-household-expenditure-per-kilolitre-of-water-used-by-s-t-2008-to-2014",
           "name": "2016 SoE Built environment Household expenditure per kilolitre of water used by state and territory 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -205,20 +860,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Household energy intensity 2002–03 to 2013–14",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-household-energy-intensity-2002-03-to-2013-14",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Built environment Net energy use per Australian household, 2002–03 to 2013–14",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-net-energy-use-per-australian-household-2002-03-to-2013-14",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-heat-related-death-estimates-selected-cities-2007-2020-2050",
           "name": "2016 SoE Built environment Heat related death estimates selected cities 2007 2020 2050",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -230,24 +872,27 @@
           "type": "group",
           "items": [
             {
+              "id": "e4c97dc7-c182-4960-a3c4-d29d8f5efef9",
               "name": "Household water consumption by state and territory 2008 to 2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-built-environment-water-consumption-by-state-and-territory",
-              "resourceID": "e4c97dc7-c182-4960-a3c4-d29d8f5efef9",
+              "resourceId": "e4c97dc7-c182-4960-a3c4-d29d8f5efef9",
               "cacheDuration": "0d"
             },
             {
+              "id": "3d69b1ff-fecb-4ea2-bfe7-c2c2b472ff96",
               "name": "",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-built-environment-water-consumption-by-state-and-territory",
-              "resourceID": "3d69b1ff-fecb-4ea2-bfe7-c2c2b472ff96",
+              "resourceId": "3d69b1ff-fecb-4ea2-bfe7-c2c2b472ff96",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-built-environment-household-energy-expenditure-by-climate-zone-2012",
           "name": "2016 SoE Built environment Household energy expenditure by climate zone 2012",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -255,6 +900,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-annual-variation-in-the-composition-of-pm2-5-at-muswellbrook-2012",
           "name": "2016 SoE Atmosphere Annual variation (smoothed 31-day running average) in the composition of PM2.5 at Muswellbrook, 2012",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -262,6 +908,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-inland-waters-monthly-streamflow-for-the-lake-eyre-basin",
           "name": "2016 SoE Inland Waters Monthly Streamflow for the Lake Eyre basin",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -269,13 +916,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Inland Waters Rain Deciles 2012",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-inland-waters-rain-deciles-2012",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-atmosphere-ghg-emissions-by-gas-and-sector-2014-15",
           "name": "2016 SoE Atmosphere Greenhouse gas emissions by gas and sector, UNFCCC accounting 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -283,6 +924,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-water-consumption-per-household-by-state-and-territory-2008-09-to-2013-14",
           "name": "2016 SoE Built environment Water consumption per household, by state and territory, 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -290,6 +932,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-water-use-expenditure-households-and-selected-industries-2008-to-2014",
           "name": "2016 SoE Built environment Water use & expenditure households and selected industries 2008 to 2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -297,6 +940,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-built-environment-level-of-accessibility-to-shopping-infrastructure-australian-capital-cities",
           "name": "2016 SoE Built environment Level of accessibility to shopping infrastructure, percentage of population, Australian capital cities",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -304,6 +948,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-public-transport-accessibility-by-capital-city-2014",
           "name": "2016 SoE Built environment Level of accessibility to public transport, percentage of population, capital cities",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -311,6 +956,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-level-of-accessibility-to-health-infrastructure-australian-capital-cities",
           "name": "2016 SoE Built environment Level of accessibility to health infrastructure Australian capital cities",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -318,6 +964,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-built-environment-level-of-accessibility-to-educatiom-infrastructure-australian-capital-cities",
           "name": "2016 SoE Built environment Level of accessibility to education infrastructure, percentage of population, Australian capital cities",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -325,20 +972,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Journey to work by transport mode by capital city 2012",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-journey-to-work-by-transport-mode-by-capital-city-2012",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Built environment Household water consumption by source 2009 to 2014",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "soe-built-environment-household-water-consumption-by-source-2009-to-2014",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-household-rainwater-tank-water-consumption-states-and-territories-2013-14",
           "name": "2016 SoE Built environment Household rainwater tank water consumption, states and territories, 2013-14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -346,13 +980,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Household insulation 2002–14",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-household-insulation-2002-14",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environmet-number-of-households-with-a-rainwater-tank-state-and-territory-2007-2013",
           "name": "2016 SoE Built environment Number of households with a rainwater tank, state and territory, 2007, 2010, 2013",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -360,6 +988,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-public-transport-by-capital-city-1990-to-2014",
           "name": "2016 SoE Built environment Public transport by capital city 1990 to 2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -367,13 +996,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Satisfaction with drinking water",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-satisfaction-with-drinking-water",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-visitors-by-region",
           "name": "2016 SoE Built environment Visitors by region",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -381,6 +1004,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-ration-people-living-with-access-greenspace-and-per-capita",
           "name": "2016 SoE Built environment Proportion of people living with access to greenspace and greenspace per capita",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -388,6 +1012,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-population-by-remoteness",
           "name": "2016 SoE Built environment Population by remoteness",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -395,6 +1020,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-psgr-rail-km-trvl-in-aust-capital-cities-1991-to-2014-financial-years",
           "name": "2016 SoE Built environment Passenger rail kilometres travelled in Australian capital cities 1991 to 2014 financial years",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -402,20 +1028,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Waste per capita per state 2010 - 2011",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-waste-per-capita-per-state-2010-2011",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Built environment Household energy $ per week by energy source",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-household-energy-per-week-by-energy-source",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-estimated-car-passenger-kms-per-person-capital-cities-1945-2013",
           "name": "2016 SoE Built environment Estimated car passenger kms per person capital cities 1945 - 2013",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -423,13 +1036,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Energy intensity selected industries 2002–03 to 2013–14",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-energy-intensity-selected-industries-2002-03-to-2013-14",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-avg-commute-duration-and-prevalence-selected-cities-2011",
           "name": "2016 SoE Built environment Average commuting trip duration and prevalence of lengthy commutes selected metropolitan and regional cities 2011",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -437,13 +1044,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Average commuting trip duration and prevalence of lengthy commutes selected metropolitan and regional cities 2011",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-avg-cmtng-trip-duration-and-prevalence-2011",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-marine-regional-trends-in-chlorophyll-a-for-southwest-marine-region-2002-16",
           "name": "2016 SoE Marine Regional trends in phytoplankton biomass from chlorophyll a as measured by the MODIS satellite for \"Southwest\" marine region, 2002-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -451,6 +1052,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-regional-trends-in-chlorophyll-a-for-temperate-east-marine-region-2002-16",
           "name": "2016 SoE Marine Regional trends in phytoplankton biomass from chlorophyll a as measured by the MODIS satellite for \"Temperate east\" marine region, 2002-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -458,6 +1060,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-regional-trends-in-chlorophyll-a-for-southeast-marine-region-2002-16",
           "name": "2016 SoE Marine Regional trends in phytoplankton biomass from chlorophyll a as measured by the MODIS satellite for \"Southeast\" marine region, 2002-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -465,6 +1068,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-regional-trends-in-chlorophyll-a-for-northwest-marine-region-2002-16",
           "name": "2016 SoE Marine Regional trends in phytoplankton biomass from chlorophyll a as measured by the MODIS satellite for \"Northwest\" marine region, 2002-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -472,6 +1076,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-regional-trends-in-chlorophyll-a-for-north-marine-region-2002-16",
           "name": "2016 SoE Marine Regional trends in phytoplankton biomass from chlorophyll a as measured by the MODIS satellite for \"North\" marine region, 2002-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -479,13 +1084,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Marine Mean concentrations total suspended solids at 9 IMOS stations",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-marine-mean-concentrations-total-suspended-solids-at-imos-stations",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-marine-regional-trends-in-chlorophyll-a-for-coral-sea-marine-region-2002-16",
           "name": "2016 SoE Marine Regional Trends in phytoplankton biomass from chlorophyll a as measured by the MODIS satellite for \"Coral Sea\" marine region, 2002-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -493,6 +1092,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-classification-of-fish-stocks-across-afma-fisheries",
           "name": "2016 SoE Marine Classification of fish stocks across AFMA fisheries",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -500,6 +1100,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-hard-coral-cover-in-the-great-barrier-reef-1986-2012",
           "name": "2016 SoE Marine Hard coral cover in the Great Barrier Reef 1986-2012",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -507,6 +1108,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-inland-waters-ecosystem-health-report-card-fitzroy-basin",
           "name": "2016 SoE Inland waters Ecosystem health report card Fitzroy Basin",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -514,6 +1116,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-number-of-2d-and-3d-seismic-surveys-in-each-region-1961-2012",
           "name": "2016 SoE Marine Number of 2D and 3D seismic surveys in each region, 1961-2012",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -521,13 +1124,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Marine Mean SECCHI disk depths at 9 IMOS Stations",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-marine-mean-secchi-disk-depths-at-9-imos-stations",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-marine-volume-of-dredged-material-disposed-at-sea-2006-2011-2016",
           "name": "2016 SoE Marine Volume of dredged material disposed at sea, 2006, 2011, 2016",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -535,6 +1132,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-percentage-of-the-australian-exclusive-economic-zone-with-high-sst-1981-2016",
           "name": "2016 SoE Marine Percentage of the Australian exclusive economic zone experiencing record high sea surface temperatures 1981-2016",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -542,6 +1140,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "soe-inland-waters-fig-6-sydney-urban-water-use",
           "name": "2016 SoE Inland waters Sydney urban water use",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -549,6 +1148,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-heritage-commonwealth-heritage-list-listed-places-by-financial-year",
           "name": "2016 SoE Heritage Commonwealth heritage listed places by financial year",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -556,6 +1156,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-inland-waters-number-of-bird-species-breeding-1983-2014",
           "name": "2016 SoE Inland waters Number of bird species breeding 1983-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -563,6 +1164,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-heritage-national-heritage-list-listed-places-by-financial-year",
           "name": "2016 SoE Heritage National heritage listed places by financial year",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -570,6 +1172,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-time-trajectory-of-spawning-orange-roughy",
           "name": "2016 SoE Marine Time trajectory of spawning biomass of the east coast population of orange roughy 1980-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -577,27 +1180,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Marine Seasonally detrended SECCHI disk depths at Port Hacking",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-marine-seasonally-detrended-secchi-disk-depths-at-port-hacking",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Built environment Average commuting distance by place of residence major cities 2011",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-average-commuting-distance-by-place-of-residence-major-cities-2011",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Built environment Car ownership over time 1971 to 2015",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-car-ownership-over-time-1971-to-2015",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-aust-waste-per-capita-by-destination-by-state-and-territory-2010-11",
           "name": "2016 SoE Built environment Australian waste generation per capita by destination by state and territory 2010-11",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -605,20 +1188,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Biodiversity Total wetland area index 1983 to 2014",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-total-wetland-area-index-1983-to-2014",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Numbers of Curlew sandpipers in southeast Tasmania, 1973 - 2016",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-numbers-of-curlew-sandpipers-in-southeast-tasmania-1973-2016",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-marine-abundance-of-sea-lion-pups-at-seal-bay-1985-2015",
           "name": "2016 SoE Marine Abundance of sea lion pups at Seal Bay 1985 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -626,6 +1196,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-marine-the-contribution-of-states-to-the-value-of-wild-fisheries-2012-13",
           "name": "2016 SoE Marine The contribution of state, territory and Australian government sectors to the gross value of commercial wild-caught fisheries production, 2012–13",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -633,13 +1204,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Biodiversity Number of EPBC listed plant species in 2011 and 2016",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-number-of-epbc-listed-plant-species-in-2011-and-2016",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-atmosphere-radiative-forcing-due-to-long-lived-ghgs-measured-in-sh-1950-2015",
           "name": "2016 SoE Atmosphere Radiative forcing due to long-lived greenhouse gases measured by CSIRO in the Southern Hemisphere, 1950-2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -647,6 +1212,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-october-monthly-average-ozone-values-for-halley-station-for-1957-2013",
           "name": "2016 SoE Antarctic environment October monthly average ozone values for Halley station for 1957-2013",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -654,6 +1220,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-stratospheric-chlorine-antarctic-and-southern-hemisphere-latitudes",
           "name": "2016 SoE Antarctic environment Equivalent effective stratospheric chlorine for the Antarctic and Southern Hemisphere mid-latitudes",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -665,24 +1232,27 @@
           "type": "group",
           "items": [
             {
+              "id": "c0d2fa13-5e3a-4cbc-9d58-85a32a634578",
               "name": "Australian coastal population growth 1991 to 2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-coastal-population-growth",
-              "resourceID": "c0d2fa13-5e3a-4cbc-9d58-85a32a634578",
+              "resourceId": "c0d2fa13-5e3a-4cbc-9d58-85a32a634578",
               "cacheDuration": "0d"
             },
             {
+              "id": "f6127bff-5d41-4ebe-96dc-c4f0c014ac2e",
               "name": "Australian coastal population 2011-2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-coastal-population-growth",
-              "resourceID": "f6127bff-5d41-4ebe-96dc-c4f0c014ac2e",
+              "resourceId": "f6127bff-5d41-4ebe-96dc-c4f0c014ac2e",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-antarctic-global-atmospheric-carbon-dioxide-concentrations",
           "name": "2016 SoE Antarctic Global atmospheric carbon dioxide concentrations",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -690,6 +1260,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-average-95th-percentile-24-hour-average-pm10-concentrations-in-capital-cities-1999-2014",
           "name": "2016 SoE Atmosphere Average 95th percentile 24-hour average PM10 concentrations in capital cities, 1999-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -697,6 +1268,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-column-ozone-levels-over-melbourne-darwin-brisbane-and-hobart-january-1979-2015",
           "name": "2016 SoE Atmosphere Column ozone levels over Melbourne, Darwin, Brisbane and Hobart, January 1979-2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -704,6 +1276,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-lead-levels-at-two-locations-in-port-pirie-south-australia-2002-2014",
           "name": "2016 SoE Atmosphere Lead levels at two locations in Port Pirie South Australia, 2002-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -711,63 +1284,31 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Biodiversity Funding for TERN, ALA and IMOS between 2009-10 and 2015-16",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-funding-for-tern-ala-and-imos-between-2009-10-and-2015-16",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Expenditure by the Department of the Environment and Energy on climate change research programmes betwen 2012-13 and 2015-16 and forward estimates",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-expenditure-by-the-department-of-the-environment-and-energy-on-cc-research",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Australian government expenditure on biodiversity management",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-australian-government-expenditure-on-biodiversity-management",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Proportion of EPBC listed ecological communities represented in the national reserve system",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-epbc-ecological-communities-national-reserve-system",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Funding ABRES bush blitz",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-funding-abres-bush-blitz",
-          "cacheDuration": "0d"
-        },
-        {
           "name": "2016 SoE Atmosphere Application of Australia's savanna burning emissions accounting methodology to the West Arnhem Land Fire Abatement Project (WALFA) area",
           "type": "group",
           "items": [
             {
+              "id": "862e04f0-35a8-464d-afd1-ab03a4e6daa9",
               "name": "2016 SoE Atmosphere Seasonality of burning in the WALFA area, 1990-2011",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-application-of-savanna-burning-emissions-methodology-to-the-walfa-area",
-              "resourceID": "862e04f0-35a8-464d-afd1-ab03a4e6daa9",
+              "resourceId": "862e04f0-35a8-464d-afd1-ab03a4e6daa9",
               "cacheDuration": "0d"
             },
             {
+              "id": "67b737d0-6ba2-41e0-a403-1f57dec8dcab",
               "name": "2016 SoE Atmosphere Savanna burning emissions in pre-project baseline period (1995-2004) and project period (2005-2011) ",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-application-of-savanna-burning-emissions-methodology-to-the-walfa-area",
-              "resourceID": "67b737d0-6ba2-41e0-a403-1f57dec8dcab",
+              "resourceId": "67b737d0-6ba2-41e0-a403-1f57dec8dcab",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-atmosphere-cumulative-abate-challenge-emissions-traj-and-cumulative-emissions-since-2008",
           "name": "2016 SoE Atmosphere Cumulative abatement challenge, emissions trajectory (2013-20) and cumulative emissions (2013-20) since 2008",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -775,60 +1316,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Biodiversity EPBC listed fauna species 2011 and 2015",
-          "type": "group",
-          "items": [
-            {
-              "name": "Number of EPBC listed fauna",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
-              "resourceID": "0ff2c8fe-bbeb-450d-af76-d1e1205e84cc",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Numbers of EPBC listed birds",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
-              "resourceID": "d1d2085a-688d-42e2-8413-ae7be1f011ed",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Numbers of EPBC listed fish",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
-              "resourceID": "75d65793-556c-47cd-af1c-d35efbbff094",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Numbers of EPBC listed mammals",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
-              "resourceID": "28418945-00bf-4319-a5b8-cb8204bd444f",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Numbers of EPBC listed reptiles",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
-              "resourceID": "0908dfa6-1253-4123-b9c2-cf1ecff5ce28",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Numbers of EPBC listed species other",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-epbc-listed-fauna-species-2011-and-2015",
-              "resourceID": "40069cef-f01f-4c6e-a2cc-a8c4d708f2c2",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
+          "id": "2016-soe-atmosphere-proportion-of-annual-anthropogenic-emissions-by-source-type-sydney-region",
           "name": "2016 SoE Atmosphere Proportion of total estimated annual anthropogenic emissions from each anthropogenic source type in the Sydney region",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -836,6 +1324,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-deaths-attributable-to-air-pollution-by-disease-2011",
           "name": "2016 SoE Atmosphere Deaths attributable to air pollution by disease, 2011",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -843,6 +1332,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-coasts-real-value-of-australian-wild-catch-production-2003-04-to-2013-14",
           "name": "2016 SoE Coasts Real value of Australian wild-catch production 2003–04 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -850,6 +1340,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-estimated-emissions-of-co2-for-the-aust-antarctic-program",
           "name": "2016 SoE Antarctic environment Annual estimated emissions of carbon dioxide (CO2) for the Australian Antarctic program",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -857,6 +1348,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-annual-vehicle-fuel-usage-for-the-australian-stations-1997-to-2015",
           "name": "2016 SoE Antarctic environment Annual fuel usage for the Australian stations, 1997 to 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -864,6 +1356,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-coasts-abundance-of-shoreline-litter-or-debris-in-australia",
           "name": "2016 SoE Coasts Abundance of shoreline litter or debris in Australia",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -875,39 +1368,36 @@
           "type": "group",
           "items": [
             {
+              "id": "63318257-d71b-4631-8fac-b4fe1539786e",
               "name": "Change in cadastral parcels 2011 to 2014 urban",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-change-in-cadastral-parcels-relative-to-distance-from-the-coast",
-              "resourceID": "63318257-d71b-4631-8fac-b4fe1539786e",
+              "resourceId": "63318257-d71b-4631-8fac-b4fe1539786e",
               "cacheDuration": "0d"
             },
             {
+              "id": "e8fe894b-f6b1-4b80-97d6-f180ec809e98",
               "name": "Change in cadastral parcels 2011 to 2014 rural",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-change-in-cadastral-parcels-relative-to-distance-from-the-coast",
-              "resourceID": "e8fe894b-f6b1-4b80-97d6-f180ec809e98",
+              "resourceId": "e8fe894b-f6b1-4b80-97d6-f180ec809e98",
               "cacheDuration": "0d"
             },
             {
+              "id": "46effb81-bd5f-4d39-9085-3363a08e02d8",
               "name": "Change in cadastral parcels 2011 to 2014 periurban",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-change-in-cadastral-parcels-relative-to-distance-from-the-coast",
-              "resourceID": "46effb81-bd5f-4d39-9085-3363a08e02d8",
+              "resourceId": "46effb81-bd5f-4d39-9085-3363a08e02d8",
               "cacheDuration": "0d"
             }
           ]
         },
         {
-          "name": "2016 SoE Built environment Categories of land cover by urban regions",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-categories-of-land-cover-by-urban-regions",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-atmosphere-greenhouse-gas-emissions-by-sector-2014-15",
           "name": "2016 SoE Atmosphere Greenhouse gas emissions by sector, 2014-15",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -915,6 +1405,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-concentrations-of-ppcbs-organochlorine-pesticides-at-sites-with-different-uses",
           "name": "2016 SoE Atmosphere Concentrations of PPCBs and selected organochlorine pesticides at sites with different land uses",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -922,6 +1413,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-capital-cities-highest-daily-average-pm2-5-concentrations",
           "name": "2016 SoE Atmosphere Capital cities' highest daily average PM2.5 concentrations, 2008-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -929,6 +1421,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-fuel-mix-contributing-to-tpes-australia-2013-and-oecd-average-2014",
           "name": "2016 SoE Atmosphere Fuel mix contributing to total primary energy supply, Australia 2013 and OECD average 2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -936,66 +1429,58 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Biodiversity Land areas cleared in Australia since 1972",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-land-areas-cleared-in-australia-since-1972",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity The five most important new solutions and innovations have the potential to improve biodiversity management over the next 10 years",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "solutions-and-innovations-over-the-next-10-years",
-          "cacheDuration": "0d"
-        },
-        {
           "name": "2016 SoE Coasts abundance invertebrates reef life survey marine",
           "type": "group",
           "items": [
             {
+              "id": "58ac5478-9d41-4178-987d-db41d66dd49e",
               "name": "Batemans Bay Invertebrates",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-abundance-invertebrates-reef-life-survey-marine",
-              "resourceID": "58ac5478-9d41-4178-987d-db41d66dd49e",
+              "resourceId": "58ac5478-9d41-4178-987d-db41d66dd49e",
               "cacheDuration": "0d"
             },
             {
+              "id": "2805a59a-b011-40f7-a110-5ee9a01f90d7",
               "name": "Jervis Bay Invertebrates",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-abundance-invertebrates-reef-life-survey-marine",
-              "resourceID": "2805a59a-b011-40f7-a110-5ee9a01f90d7",
+              "resourceId": "2805a59a-b011-40f7-a110-5ee9a01f90d7",
               "cacheDuration": "0d"
             },
             {
+              "id": "9f87cbc5-5e82-4ac5-9323-803750ce6449",
               "name": "Sydney Invertebrates",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-abundance-invertebrates-reef-life-survey-marine",
-              "resourceID": "9f87cbc5-5e82-4ac5-9323-803750ce6449",
+              "resourceId": "9f87cbc5-5e82-4ac5-9323-803750ce6449",
               "cacheDuration": "0d"
             },
             {
+              "id": "6f13687f-136c-4f70-94ed-03e4c3ec98c9",
               "name": "Port Stephens Invertebrates",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-abundance-invertebrates-reef-life-survey-marine",
-              "resourceID": "6f13687f-136c-4f70-94ed-03e4c3ec98c9",
+              "resourceId": "6f13687f-136c-4f70-94ed-03e4c3ec98c9",
               "cacheDuration": "0d"
             },
             {
+              "id": "9d353ba0-50d9-41f1-abbc-374cc4e525af",
               "name": "Port Phillip Heads Invertebrates",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-coasts-abundance-invertebrates-reef-life-survey-marine",
-              "resourceID": "9d353ba0-50d9-41f1-abbc-374cc4e525af",
+              "resourceId": "9d353ba0-50d9-41f1-abbc-374cc4e525af",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-marine-trends-in-the-biomass-of-large-fishes-and-invertebrates-around-australia",
           "name": "2016 SoE Marine Trends in the biomass of large fishes and invertebrates around Australia",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1003,6 +1488,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-five-day-running-average-of-daily-sea-ice-for-the-southern-hemisphere",
           "name": "2016 SoE Antarctic environment Five-day running average of daily sea ice extent anomaly for the Southern Hemisphere",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1014,59 +1500,27 @@
           "type": "group",
           "items": [
             {
+              "id": "608f4e73-c6d6-48ce-88d3-97933df7bb0e",
               "name": "Fish amphibians and others",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-biodiversity-number-of-records-in-the-atlas-of-living-australia-for-taxa-pre-2012-and-2015",
-              "resourceID": "608f4e73-c6d6-48ce-88d3-97933df7bb0e",
+              "resourceId": "608f4e73-c6d6-48ce-88d3-97933df7bb0e",
               "cacheDuration": "0d"
             },
             {
+              "id": "a1d40b4c-c1c1-4836-96dc-231a5ffcf68f",
               "name": "Plants and birds",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-biodiversity-number-of-records-in-the-atlas-of-living-australia-for-taxa-pre-2012-and-2015",
-              "resourceID": "a1d40b4c-c1c1-4836-96dc-231a5ffcf68f",
+              "resourceId": "a1d40b4c-c1c1-4836-96dc-231a5ffcf68f",
               "cacheDuration": "0d"
             }
           ]
         },
         {
-          "name": "2016 SoE Biodiversity Proportion of indigenous, government owned, jointly held and privately protected areas in the national reserve system",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "biodiversity-proportion-indigenous-govt-owned-jointly-held-privately-protected-areas-in-the-nrs",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity The five most important knowledge gaps hindering effective management of biodiversity",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-the-5-most-important-knowledge-gaps-hindering-effective-management-of-biodiversity",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Australia's forest area changes from 2005",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-australia-s-forest-area-changes-from-2005",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity Pressures affecting threatened species",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-biodiversity-pressures-affecting-threatened-species",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Land First-time forest conversion and re-clearing in Australia 1990 to 2014",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-land-first-time-forest-conversion-and-re-clearing-in-australia-1990-to-2014",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-land-native-and-exotic-plants-in-australia",
           "name": "2016 SoE Land Native and exotic plants in Australia",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1074,6 +1528,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-mode-share-of-commuting-by-area-of-work-sydney",
           "name": "2016 SoE Built environment Mode share of commuting by area of work Sydney",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1081,13 +1536,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Land Waste generation population and GVA 1997 - 2012",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-land-waste-generation-population-and-gva-1997-2012",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-water-usage-in-selected-other-industries-by-state-and-territory-2008-14",
           "name": "2016 SoE Built environment Water consumption in selected other industries by state and territory 2008-09 to 2013-14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1095,65 +1544,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Land Amount of deforestation by type and decade 1972-2014 excludes ACT",
-          "type": "group",
-          "items": [
-            {
-              "name": "Primary deforestation trends",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-land-amount-of-deforestation-by-type-and-decade-1972-2014-excludes-act",
-              "resourceID": "942ea459-417a-4c4b-bd83-45d16db430b6",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Regrowth deforestation trends",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-land-amount-of-deforestation-by-type-and-decade-1972-2014-excludes-act",
-              "resourceID": "2dafd7c5-af0b-476d-b7bd-3fc38de6e807",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Total deforestation trends",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-land-amount-of-deforestation-by-type-and-decade-1972-2014-excludes-act",
-              "resourceID": "acc9c8d2-f6e1-4cae-84f2-30ec0a5183d2",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
-          "name": "2016 SoE Land Percentage of total deforestation in each decade by land use as of 2005-06 and land tenure as of 1993",
-          "type": "group",
-          "items": [
-            {
-              "name": "Deforestation by land tenure",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-land-pct-total-deforestation-decade-by-land-use-2005-06-land-tenure-as-of-1993",
-              "resourceID": "8f599774-d165-4179-b31b-ddf3e229c3ca",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Deforestation by land use",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-land-pct-total-deforestation-decade-by-land-use-2005-06-land-tenure-as-of-1993",
-              "resourceID": "01fb385e-6ff9-4094-8fd8-560bd88090ec",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
-          "name": "2016 soe Land Extent of modification of major vegetation groups, as assessed by VAST",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-land-extent-of-modification-of-major-vegetation-groups-as-assessed-by-vast",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-land-agricultural-lime-application-in-south-australia-2000-to-2012",
           "name": "2016 SoE Land Agricultural lime application in South Australia 2000 to 2012",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1161,6 +1552,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-land-change-in-area-of-for-crops-and-pastures-under-different-tillage-practices-1996-2012",
           "name": "2016 SoE Land change in the % of area of all land prepared for crops and pastures under different tillage practices 1996 - 2012",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1168,6 +1560,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-land-agricultural-lime-sales-in-south-australia-2005-to-2012",
           "name": "2016 SoE Land Agricultural lime sales in Western Australia 2004 to 2016",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1175,6 +1568,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-total-number-of-southern-elephant-seal-adult-cows-at-macquarie-island-1988-2014",
           "name": "2016 SoE Antarctic Total number of southern elephant seal adult cows at Macquarie Island 1988–2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1182,6 +1576,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-mass-of-waste-disposed-by-the-australian-antarctic-program",
           "name": "2016 SoE Antarctic environment Mass of waste disposed by the Australian Antarctic Program",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1189,6 +1584,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-annual-shipping-and-aviation-fuel-usage",
           "name": "2016 SoE Antarctic Annual shipping and aviation fuel usage",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1200,24 +1596,27 @@
           "type": "group",
           "items": [
             {
+              "id": "b10ea060-2025-4a2d-8171-736de0875e4d",
               "name": "2016 SoE Atmosphere For major cities, the average maximum four-hour average ozone concentrations, 1999-2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-major-cities-av-max-4h-av-ozone-and-av-95th-percentile-4h-av-ozone-1999-2014",
-              "resourceID": "b10ea060-2025-4a2d-8171-736de0875e4d",
+              "resourceId": "b10ea060-2025-4a2d-8171-736de0875e4d",
               "cacheDuration": "0d"
             },
             {
+              "id": "bb15bbc4-5588-411f-864e-2a37fb772c56",
               "name": "2016 SoE Atmosphere For major cities, the average 95th percentile four-hour average ozone concentrations, 1999-2014",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-major-cities-av-max-4h-av-ozone-and-av-95th-percentile-4h-av-ozone-1999-2014",
-              "resourceID": "bb15bbc4-5588-411f-864e-2a37fb772c56",
+              "resourceId": "bb15bbc4-5588-411f-864e-2a37fb772c56",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-antarctic-environment-suspended-solids",
           "name": "2016 SoE Antarctic environment Suspended solids",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1225,6 +1624,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-biological-oxygen-demand",
           "name": "2016 SoE Antarctic environment Biological oxygen demand",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1232,73 +1632,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Distributed water use and expenditure households and selected other industries 2009 to 2014",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "distributed-water-use-and-expenditure-households-and-selected-other-industries-2009-to-2014",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Biodiversity World wildlife fund ecosystem gaps 2008",
-          "type": "group",
-          "items": [
-            {
-              "name": "WWF ecosystem gaps 2008 analysis 1",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
-              "resourceID": "f9626560-ec89-4c12-9a7c-da93677508b9",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "WWF ecosystem gaps 2008 analysis 2",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
-              "resourceID": "1db4b916-4e0e-465d-be94-ee56b0cbe7a9",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "WWF ecosystem gaps 2008 analysis 3",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "2016-soe-biodiversity-world-wildlife-fund-ecosystem-gaps-2008",
-              "resourceID": "e3a264d7-da5c-4fc4-b410-8af95b5d44ae",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
-          "name": "2016 SoE Biodiversity Eastern Australian waterbird survey results 1983 to 2014",
-          "type": "group",
-          "items": [
-            {
-              "name": "Waterbird breeding index",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "eastern-australian-waterbird-survey-results-1983-to-2014",
-              "resourceID": "53a24550-9d2a-4cc8-8895-f5cbc3c615a2",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Waterbird species breeding",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "eastern-australian-waterbird-survey-results-1983-to-2014",
-              "resourceID": "57dad0e1-d8b4-4d9c-9d0e-67a182a3d427",
-              "cacheDuration": "0d"
-            },
-            {
-              "name": "Number of waterbirds",
-              "type": "ckan-resource",
-              "url": "https://data.gov.au",
-              "datasetId": "eastern-australian-waterbird-survey-results-1983-to-2014",
-              "resourceID": "bd3fcf86-03de-4b4f-ba5d-6d22035c876f",
-              "cacheDuration": "0d"
-            }
-          ]
-        },
-        {
+          "id": "2016-soe-marine-bar-charts-of-swept-area-by-marine-region",
           "name": "2016 SoE Marine Bar chart of fisheries swept-area by marine bioregion",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1306,13 +1640,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Marine Annual fishing effort (number of hours) of commercial trawl and dredge fisheries across Australian government and state and territory jurisdictions 1970-2014",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-marine-annual-fishing-effort-across-australian-jurisdictions-1970-2014",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-marine-footprint-of-aus-commercial-trawl-dredge-fisheries-as-percent-of-imcra-bioregions",
           "name": "2016 SoE Marine Bar chart of fisheries footprint by marine bioregion",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1324,40 +1652,45 @@
           "type": "group",
           "items": [
             {
+              "id": "ba65ea6a-fd58-4e74-ac9e-7b76932ed41b",
               "name": "2016 SoE Atmosphere Mean concentration of CO2 and CO2-e at Cape Grim, 1976-2015",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-mean-conc-co2-co2-e-tropospheric-ozone-median-particle-number-conc-aod-cape-grim",
-              "resourceID": "ba65ea6a-fd58-4e74-ac9e-7b76932ed41b",
+              "resourceId": "ba65ea6a-fd58-4e74-ac9e-7b76932ed41b",
               "cacheDuration": "0d"
             },
             {
+              "id": "a25a97de-1efa-4b3d-9515-b490189d7615",
               "name": "2016 SoE Atmosphere Mean concentration of tropospheric ozone at Cape Grim, 1982-2015",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-mean-conc-co2-co2-e-tropospheric-ozone-median-particle-number-conc-aod-cape-grim",
-              "resourceID": "a25a97de-1efa-4b3d-9515-b490189d7615",
+              "resourceId": "a25a97de-1efa-4b3d-9515-b490189d7615",
               "cacheDuration": "0d"
             },
             {
+              "id": "7895eaaf-911e-4226-ba56-36cccdb48d68",
               "name": "2016 SoE Atmosphere Monthly median Aerosol Optical Depth at 868nm at Cape Grim, 1996-2015",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-mean-conc-co2-co2-e-tropospheric-ozone-median-particle-number-conc-aod-cape-grim",
-              "resourceID": "7895eaaf-911e-4226-ba56-36cccdb48d68",
+              "resourceId": "7895eaaf-911e-4226-ba56-36cccdb48d68",
               "cacheDuration": "0d"
             },
             {
+              "id": "dceca5dd-bd9a-4596-b947-95adc25ced08",
               "name": "2016 SoE Atmosphere Monthly median particle number concentration at Cape Grim, 1977-2015",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-atmosphere-mean-conc-co2-co2-e-tropospheric-ozone-median-particle-number-conc-aod-cape-grim",
-              "resourceID": "dceca5dd-bd9a-4596-b947-95adc25ced08",
+              "resourceId": "dceca5dd-bd9a-4596-b947-95adc25ced08",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-atmosphere-total-volatile-organic-compounds-by-source-excluding-biogenics-2013-14",
           "name": "2016 SoE Atmosphere Total volatile organic compounds by source, excluding biogenics,  2013-14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1365,6 +1698,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-annual-mean-concentrations-of-ghgs-cape-grim-antarctic-firn-and-ice-cores",
           "name": "2016 SoE Atmosphere Annual mean concentrations of greenhouse gases observed by CSIRO at Cape Grim, Tasmania, and from air extracted from Antarctic firn and ice cores, 1500-2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1372,6 +1706,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-carbon-dioxide-emissions-per-us-1000-2013",
           "name": "2016 SoE Atmosphere Carbon dioxide emissions per US$1000, 2013",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1379,6 +1714,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-carbon-dioxide-emissions-per-person-2013",
           "name": "2016 SoE Atmosphere carbon dioxide emissions per person, 2013",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1386,6 +1722,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-radiative-forcing-in-2011-relative-to-1750-and-aggregated-uncertainties",
           "name": "2016 SoE Atmosphere Radiative forcing in 2011 relative to 1750 and aggregated uncertainties for the main drivers of climate change",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1393,6 +1730,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-australia-s-net-greenhouse-gas-emissions-by-sector-1990-and-2000-15",
           "name": "2016 SoE Atmosphere Australia's net greenhouse gas emissions by sector, 1990 and 2000-15",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1400,6 +1738,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-co2-emissions-fuel-combustion-ippu-underlying-drivers-1990-2014",
           "name": "2016 SoE Atmosphere Carbon dioxide emissions from fuel combustion, IPPU, and underlying drivers, 1990-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1407,6 +1746,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-historical-projected-growth-emissions-motor-vehicles-metro-areas-1970-2030",
           "name": "2016 SoE Atmosphere Historical and projected growth in major pollutant emissions from motor vehicles in metropolitan areas, 1970-2030",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1414,6 +1754,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "soe-2016-atmosphere-australia-s-tracking-against-the-kyoto-protocol-target-commitment-period-1",
           "name": "2016 SoE Atmosphere Australia's tracking against the Kyoto Protocol target, commitment period 1",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1421,6 +1762,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "soe-2016-atmosphere-annual-change-in-total-emissions-from-underlying-drivers-1992-2014",
           "name": "2016 SoE Atmosphere Annual change in total emissions from underlying drivers, 1992-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1428,6 +1770,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "soe-2016-atmosphere-australia-s-annual-emissions-per-capita-and-per-dollar-of-real-gdp-1990-2015",
           "name": "2016 SoE Atmosphere Australia's annual emissions per capita and per dollar of real GDP, 1990-2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1435,6 +1778,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-annual-concentration-of-endosulfan-measured-in-air-2011-2014",
           "name": "2016 SoE Atmosphere Annual concentration of endosulfan measured in air, 2011-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1442,6 +1786,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-change-co2-emissions-fuel-combustion-ippu-underlying-drivers-1992-2014",
           "name": "2016 SoE Atmosphere Annual change in CO2 emissions from fuel combustion, IPPU, underlying drivers, 1992-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1449,6 +1794,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-time-series-anomalies-seasurface-temp-temp-over-land-in-australian-region",
           "name": "2016 SoE Atmosphere Time series of anomalies in sea-surface temp and temp over land in Australian region",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1456,6 +1802,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-greenhouse-gas-emissions-by-gas-2014-15",
           "name": "2016 SoE Atmosphere Greenhouse gas emissions by gas, 2014-15",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1463,6 +1810,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-carbon-dioxide-methane-and-nitrous-oxide-emissions-by-sector-2015",
           "name": "2016 SoE Atmosphere carbon dioxide, methane and nitrous oxide emissions by sector, 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1470,6 +1818,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-synthetic-gas-emission-by-gas-type-2015",
           "name": "2016 SoE Atmosphere Synthetic gas emissions by gas type, 2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1477,6 +1826,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-atmosphere-trends-in-extreme-fire-weather-days-at-38-climate-reference-sites-1974-2015",
           "name": "2016 SoE Atmosphere Trends in extreme fire weather days at 38 climate reference sites, 1974-2015",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1484,6 +1834,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-passenger-kilometres-travelled-by-road-in-capital-cities-1991-to-2014",
           "name": "2016 SoE Built Environment passenger kilometres travelled by road in capital cities 1991 to 2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1491,13 +1842,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Marine Increase in the number of cargo ships involved in coastal or international voyages that made port calls",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-marine-increase-in-the-number-of-cargo-ships-that-made-port-calls",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-baseline-modal-share-projections-for-total-urban-travel-to-2030-bitre",
           "name": "2016 SoE Built environment baseline modal share projections for total urban travel to 2030 (BITRE)",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1505,6 +1850,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-inland-waters-average-annual-residential-water",
           "name": "2016 SoE Inland waters Average annual residential water supplied, 2005–06 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1512,6 +1858,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-environment-antarctic-participation",
           "name": "2016 SoE Antarctic environment Antarctic participation",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1519,6 +1866,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "annual-electricity-production-across-the-four-australian-stations",
           "name": "2016 SoE Antarctic environment Annual electricity production across the four Australian stations",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1526,6 +1874,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-antarctic-mawson-and-macquarie-island-stations-temperature-anomalies-1948-2014",
           "name": "2016 SoE Antarctic environment Mawson and Macquarie Island stations temperature anomalies, 1948 - 2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1533,6 +1882,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-upper-projections-of-avoidable-social-costs-of-congestion-1990-2030",
           "name": "2016 SoE Built environment Upper projections of avoidable social costs of congestion, 1990-2030",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1540,6 +1890,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-drivers-total-waste-generated-including-resource-recovery-rate",
           "name": "2016 SoE Drivers Total waste generated including resource recovery rate (excluding fly ash) by jurisdiction",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1551,55 +1902,54 @@
           "type": "group",
           "items": [
             {
+              "id": "93653b89-5dee-4c31-a7dd-b3483fad636a",
               "name": "Farm and fish food production",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-drivers-soe-2016-drivers-value-chain-for-fresh-and-processed-food-in-australia-2012-13",
-              "resourceID": "93653b89-5dee-4c31-a7dd-b3483fad636a",
+              "resourceId": "93653b89-5dee-4c31-a7dd-b3483fad636a",
               "cacheDuration": "0d"
             },
             {
+              "id": "ba9ba6ef-59df-41f6-919c-1716517676ca",
               "name": "Food and beverage processing, sales and service revenue",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-drivers-soe-2016-drivers-value-chain-for-fresh-and-processed-food-in-australia-2012-13",
-              "resourceID": "ba9ba6ef-59df-41f6-919c-1716517676ca",
+              "resourceId": "ba9ba6ef-59df-41f6-919c-1716517676ca",
               "cacheDuration": "0d"
             },
             {
+              "id": "dad06bf3-2096-4b1d-84ce-b314c47c229b",
               "name": "Retail food sales",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-drivers-soe-2016-drivers-value-chain-for-fresh-and-processed-food-in-australia-2012-13",
-              "resourceID": "dad06bf3-2096-4b1d-84ce-b314c47c229b",
+              "resourceId": "dad06bf3-2096-4b1d-84ce-b314c47c229b",
               "cacheDuration": "0d"
             },
             {
+              "id": "02106e11-f10e-4d53-b071-229c0b878136",
               "name": "Exports",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-drivers-soe-2016-drivers-value-chain-for-fresh-and-processed-food-in-australia-2012-13",
-              "resourceID": "02106e11-f10e-4d53-b071-229c0b878136",
+              "resourceId": "02106e11-f10e-4d53-b071-229c0b878136",
               "cacheDuration": "0d"
             },
             {
+              "id": "ccf4c352-1369-4da8-a479-81d46beaea93",
               "name": "Imports",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-drivers-soe-2016-drivers-value-chain-for-fresh-and-processed-food-in-australia-2012-13",
-              "resourceID": "ccf4c352-1369-4da8-a479-81d46beaea93",
+              "resourceId": "ccf4c352-1369-4da8-a479-81d46beaea93",
               "cacheDuration": "0d"
             }
           ]
         },
         {
-          "name": "2016 SoE Built environment hh energy use and expenditure, by energy product 2008–09 to 2013–14",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-household-energy-use-and-expenditure-by-energy-product-2008-09-to-2013-14",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-water-efficiency-select-industries-2008-09-to-2013-2014",
           "name": "2016 SoE Built environment Water efficiency select industries 2008-09 to 2013-2014",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1607,6 +1957,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-characteristics-of-heavy-urban-passenger-railways",
           "name": "2016 SoE Built Environment characteristics of heavy urban passenger railways",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1614,6 +1965,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-inland-waters-water-held-in-storage-2011-16",
           "name": "2016 SoE Inland waters Water held in storage, 2011-16",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1621,6 +1973,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-household-water-consumption-by-source-2008-09-to-2013-14",
           "name": "2016 SoE Built environment Household water consumption, by source, 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1628,6 +1981,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-water-consumption-households-by-state-and-territory-2008-09-to-2013-14",
           "name": "2016 SoE Built environment Water consumption in Australian households, by state and territory, 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1635,6 +1989,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-net-household-energy-use-and-expenditure-2008-09-to-2013-14",
           "name": "2016 SoE Built environment Net household energy use and expenditure, by type of energy product, 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1642,6 +1997,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-cities-population-projections",
           "name": "2016 SoE Built environment Cities population projections",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1649,20 +2005,7 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Built environment Domestic net energy use, industry and households, 2009–10 to 2013–14 (ABS)",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-domestic-net-energy-use-industry-and-households-2009-10-to-2013-14-abs",
-          "cacheDuration": "0d"
-        },
-        {
-          "name": "2016 SoE Built environment Water consumption in households/selected industries 2008 to 2014",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-built-environment-water-consumption-in-households-selected-industries-2008-to-2014",
-          "cacheDuration": "0d"
-        },
-        {
+          "id": "2016-soe-built-environment-distributed-water-use-and-expenditure-2008-09-to-2013-14",
           "name": "2016 SoE Built environment Distributed water use and expenditure, households and selected other industries, 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1670,35 +2013,31 @@
           "cacheDuration": "0d"
         },
         {
-          "name": "2016 SoE Drivers Changes in Australian gross domestic product, population and waste generation, 1996–97 to 2012–13",
-          "type": "ckan-resource",
-          "url": "https://data.gov.au",
-          "datasetId": "2016-soe-drivers-changes-in-australian-gdp-population-and-waste-generation-1996-97-to-2012-13",
-          "cacheDuration": "0d"
-        },
-        {
           "name": "2016 SoE Antarctic environment 5-year-smoothed annual minimum and maximum temperatires by station, 1948 to 2013",
           "type": "group",
           "items": [
             {
+              "id": "5d9edabe-b6af-4975-9340-88f55b872a00",
               "name": "2016 SoE Antarctic environment 5 year smoothed max min temperatures for AAD stations",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-antarctic-5-year-smoothed-annual-minimum-and-maximum-temperatires-by-station-1948-to-2013",
-              "resourceID": "5d9edabe-b6af-4975-9340-88f55b872a00",
+              "resourceId": "5d9edabe-b6af-4975-9340-88f55b872a00",
               "cacheDuration": "0d"
             },
             {
+              "id": "29cead3c-0f1c-4449-9012-f14c4400d9ed",
               "name": "5 year smoothed max min temperatures AAD stations graph image",
               "type": "ckan-resource",
               "url": "https://data.gov.au",
               "datasetId": "2016-soe-antarctic-5-year-smoothed-annual-minimum-and-maximum-temperatires-by-station-1948-to-2013",
-              "resourceID": "29cead3c-0f1c-4449-9012-f14c4400d9ed",
+              "resourceId": "29cead3c-0f1c-4449-9012-f14c4400d9ed",
               "cacheDuration": "0d"
             }
           ]
         },
         {
+          "id": "2016-soe-drivers-growth-and-growth-projections-for-australian-resource-commodities",
           "name": "2016 SoE Drivers Growth and growth projections for Australian resource commodities",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1706,6 +2045,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-drivers-selected-socio-economic-and-environmental-measures-1996-97-to-2012-13",
           "name": "2016 SoE Drivers Selected socio-economic and environmental measures, 1996–97 to 2012–13",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1713,6 +2053,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "2016-soe-built-environment-water-consumption-in-australian-households-2008-09-to-2013-14",
           "name": "2016 SoE Built environment Water consumption in Australian households, by state and territory, 2008–09 to 2013–14",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1720,6 +2061,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "test-growth",
           "name": "Test_growth",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1727,6 +2069,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "test-drivers-dataset-null-values",
           "name": "TEST-Drivers-dataset-null-values",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
@@ -1734,6 +2077,7 @@
           "cacheDuration": "0d"
         },
         {
+          "id": "test-data-threatened-species-listed-under-the-epbc-act",
           "name": "TEST data-Threatened species listed under the EPBC Act",
           "type": "ckan-resource",
           "url": "https://data.gov.au",
