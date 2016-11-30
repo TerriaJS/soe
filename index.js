@@ -33,6 +33,9 @@ import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerS
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
+import CustomFeatureInfoButton from './lib/Views/CustomFeatureInfoButton';
+
+import FeatureInfoSection from 'terriajs/lib/ReactViews/FeatureInfo/FeatureInfoSection';
 
 // Tell the OGR catalog item where to find its conversion service.  If you're not using OgrCatalogItem you can remove this.
 OgrCatalogItem.conversionServiceBaseUrl = configuration.conversionServiceBaseUrl;
@@ -40,6 +43,8 @@ OgrCatalogItem.conversionServiceBaseUrl = configuration.conversionServiceBaseUrl
 // Register custom Knockout.js bindings.  If you're not using the TerriaJS user interface, you can remove this.
 registerKnockoutBindings();
 
+// Add custom button to feature info panel
+FeatureInfoSection.extraComponents.push(CustomFeatureInfoButton);
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of

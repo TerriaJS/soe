@@ -376,53 +376,100 @@ gulp.task('make-catalog', function(cb) {
 
     }
 
-    ckan('action/organization_show?id=state-of-the-environment&include_datasets=true').then(body => {
-        console.log('Retrieving ' + body.result.packages.length + ' packages.  This may take awhile.');
+    var knownThemes = [
+        "Antarctic Map",
+        "Atmosphere Map",
+        "Biodiversity Map",
+        "Biodiversity", // Backward compatibility
+        "Built Environment Map",
+        "Coasts Map",
+        "Heritage Map",
+        "Inland Waters Map",
+        "Land Map",
+        "Marine Map",
+        "Overview Map",
+        "Drivers Map"
+    ];
 
-        function nextPackage(i) {
+    var themeToResultMap = {};
+    for (var i=0; i<knownThemes.length; i++) {
+        themeToResultMap[knownThemes[i]] = [];
+    }
+
+
+
+    ckan('action/organization_show?id=state-of-the-environment&include_datasets=true').then(body => {
+        console.log('Retrieving ' + body.result.packages.length + ' packages. This may take a while.');
+
+        function sortPackageNext(i) {
             var p = body.result.packages[i];
             if (!p) {
+                for (var themeName in themeToResultMap) {
+                    console.log("Processing " + themeName + " with " + themeToResultMap[themeName].length + " items found.");
+                    var packageResults = themeToResultMap[themeName];
+                    for (var j=0; j<packageResults.length; j++) {
+                        var packageResult = packageResults[j];
+
+                        var subItems = [];
+                        var item = items.filter(item => item.name === themeName);
+
+                        if (item.length === 0) {
+                            items.push({
+                                name: themeName,
+                                type: "group",
+                                items: subItems
+                            });
+                        } else {
+                            subItems = item[0].items;
+                        }
+
+                        packageResult.resources.forEach(resource => {
+                            console.log("Resource found with format " + resource.format + ". Only format Esri REST will be used.");
+                            if (resource.format === "Esri REST") {
+                                subItems.push({
+                                    id: resource.id,
+                                    name: resource.name,
+                                    debugFormat: resource.format,
+                                    type: "ckan-resource",
+                                    url: "https://data.gov.au",
+                                    datasetId: packageResult.name,
+                                    resourceId: resource.id,
+                                    cacheDuration: '0d'
+                                });
+                            }
+                        });
+                    }
+                }
+
                 fs.writeFileSync('./wwwroot/init/soe_generated.json', JSON.stringify(catalog, undefined, '  '));
                 console.log('Done');
                 return cb();
             }
 
             ckan('action/package_show?id=' + p.name).then(packageBody => {
-                if (packageBody.result.resources.length === 1) {
-                    items.push({
-                        id: packageBody.result.name,
-                        name: packageBody.result.title,
-                        type: "ckan-resource",
-                        url: "https://data.gov.au",
-                        datasetId: packageBody.result.name,
-                        cacheDuration: '0d'
-                    });
-                } else {
-                    var subItems = [];
-                    items.push({
-                        name: packageBody.result.title,
-                        type: "group",
-                        items: subItems
-                    });
+                var foundSoeMapData = false;
+                var found_themes = [];
 
-                    packageBody.result.resources.forEach(resource => {
-                        subItems.push({
-                            id: resource.id,
-                            name: resource.name,
-                            type: "ckan-resource",
-                            url: "https://data.gov.au",
-                            datasetId: packageBody.result.name,
-                            resourceId: resource.id,
-                            cacheDuration: '0d'
-                        });
-                    });
+                packageBody.result.tags.forEach(tag => {
+                    if (tag.name === "SoE Map") {
+                        foundSoeMapData = true;
+                    }
+                    var ind = knownThemes.indexOf(tag.name);
+                    if (ind !== -1) {
+                        found_themes.push(ind);
+                    }
+                });
+
+                if (foundSoeMapData && found_themes.length !== 0) {
+                    for (var j=0; j<found_themes.length; j++) {
+                        var theme = knownThemes[found_themes[j]];
+                        themeToResultMap[theme].push(packageBody.result);
+                    }
                 }
-
-                nextPackage(i+1);
+                sortPackageNext(i+1);
             });
         }
-
-        nextPackage(0);
+        sortPackageNext(0);
     });
 });
 

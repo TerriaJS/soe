@@ -1,0 +1,5 @@
+
+.btn {
+  composes: btn from 'terriajs/lib/ReactViews/FeatureInfo/feature-info-download.scss';
+  color: white !important;
+}
