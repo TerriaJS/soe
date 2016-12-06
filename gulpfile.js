@@ -380,7 +380,6 @@ gulp.task('make-catalog', function(cb) {
         "Antarctic Map",
         "Atmosphere Map",
         "Biodiversity Map",
-        "Biodiversity", // Backward compatibility
         "Built Environment Map",
         "Coasts Map",
         "Heritage Map",
