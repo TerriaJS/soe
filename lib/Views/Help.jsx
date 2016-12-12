@@ -2,6 +2,8 @@
 
 import React from 'react';
 import ObserverModelMixin from 'terriajs/lib/ReactViews/ObserveModelMixin';
+import HelpScreenData from 'terriajs/lib/Models/HelpScreenData';
+import HelpScreen from './HelpScreen';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import classNames from 'classnames';
 import MenuPanel from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx';
@@ -38,30 +40,69 @@ const HelpPanel = React.createClass({
         });
     },
 
-    cancel(div) {
+    cancel() {
         var overlay = document.getElementById("overlay");
         overlay.style.display = "none";
         var clearOverlay = document.getElementById("clearoverlay");
         clearOverlay.style.display = "none";
 
-        var addDataButton = document.getElementsByClassName("tjs-side-panel__button tjs-_buttons__btn tjs-_buttons__btn-primary");
-        addDataButton[0].style.zIndex = 100;
+        this.props.viewState.highlightedComponentId = '';
+        this.props.terria.helpScreen.pop();
     },
 
-    help() {
-        console.log("help!");
+    help(screens, i) {
+        this.props.viewState.highlightedComponentId = screens[i].highlightedComponentId;
+        var that = this;
+        var helpScreenData = new HelpScreenData({
+            message: screens[i].message,
+            left: screens[i].left,
+            top: screens[i].top,
+            caret: screens[i].caret,
+            currentScreenNumber: i+1,
+            totalNumberOfScreens: screens.length,
+            onCancel: function() {
+                that.props.terria.helpScreen.pop();
+                if ((i+1) >= screens.length) {
+                    that.cancel();
+                } else {
+                    that.help(screens, i+1);
+                }
+            }
+        });
+        this.props.terria.helpScreen.push(helpScreenData);
+    },
+
+    greyScreen() {
         var overlay = document.getElementById("overlay");
         overlay.style.display = "block";
-
-        var addDataButton = document.getElementsByClassName("tjs-side-panel__button tjs-_buttons__btn tjs-_buttons__btn-primary");
-        console.log(addDataButton);
-        addDataButton[0].style.zIndex = 1500;
-        addDataButton[0].style.position = "relative";
 
         // To protect any elements we shift above the overlay from being clicked on, because they're for display only.
         var clearOverlay = document.getElementById("clearoverlay");
         clearOverlay.style.display = "block";
         clearOverlay.onclick = this.cancel;
+    },
+
+    helpLoadData() {
+        this.greyScreen();
+        var screenOneMessage = "<div><strong>Click here to:</strong><ul><li>Browse all of the additional data sets within the State of the Environment catalogue</li><li>Add selected data sets to the map</li></ul></div>";
+        var screenOneRect = this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents['addData'].getBoundingClientRect();
+
+        var screenTwoMessage = "<div>All of your active data sets will appear in your data workbench.</div>";
+        var screenTwoRect = this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents['dataSets'].getBoundingClientRect();
+        this.help([new HelpScreen({
+                message: screenOneMessage,
+                highlightedComponentId: 'addData',
+                left: screenOneRect.left,
+                top: screenOneRect.bottom + 10,
+                caret: 'top'
+              }),
+              new HelpScreen({
+                message: screenTwoMessage,
+                highlightedComponentId: 'dataSets',
+                left: screenTwoRect.right + 15,
+                top: screenTwoRect.top - 3,
+                caret: 'left'
+              })], 0);
     },
 
     render() {
@@ -84,7 +125,7 @@ const HelpPanel = React.createClass({
                         <label className={DropdownStyles.heading}> What would you like to do? </label>
                         <ul className={Styles.viewerSelector}>
                             <li key={0} className={Styles.listItem}>
-                                <button onClick={this.help}
+                                <button onClick={this.helpLoadData}
                                         className={Styles.btnViewer}>
                                     Load data from the catalogue
                                 </button>
@@ -92,11 +133,11 @@ const HelpPanel = React.createClass({
                             <li key={1} className={Styles.listItem}>
                                 <button onClick={this.help}
                                         className={Styles.btnViewer}>
-                                    Load data from an external source
+                                    Load data from a file or external source
                                 </button>
                             </li>
                             <li key={2} className={Styles.listItem}>
-                                <button onClick={this.help}
+                                <button onClick={this.helpMapSettings}
                                         className={Styles.btnViewer}>
                                     Change the map settings
                                 </button>
@@ -104,19 +145,7 @@ const HelpPanel = React.createClass({
                             <li key={3} className={Styles.listItem}>
                                 <button onClick={this.help}
                                         className={Styles.btnViewer}>
-                                    Save/print
-                                </button>
-                            </li>
-                            <li key={4} className={Styles.listItem}>
-                                <button onClick={this.help}
-                                        className={Styles.btnViewer}>
-                                    Download the data
-                                </button>
-                            </li>
-                            <li key={5} className={Styles.listItem}>
-                                <button onClick={this.help}
-                                        className={Styles.btnViewer}>
-                                    Go back to the topic I was reading
+                                    Share/Export/Print my map
                                 </button>
                             </li>
                         </ul>
