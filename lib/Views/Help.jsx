@@ -2,8 +2,7 @@
 
 import React from 'react';
 import ObserverModelMixin from 'terriajs/lib/ReactViews/ObserveModelMixin';
-import HelpScreenData from 'terriajs/lib/Models/HelpScreenData';
-import HelpScreen from './HelpScreen';
+import HelpScreen from 'terriajs/lib/Models/HelpScreen';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import classNames from 'classnames';
 import MenuPanel from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx';
@@ -47,29 +46,23 @@ const HelpPanel = React.createClass({
         clearOverlay.style.display = "none";
 
         this.props.viewState.highlightedComponentId = '';
-        this.props.terria.helpScreen.pop();
+        this.props.terria.helpScreens.pop();
     },
 
     help(screens, i) {
         this.props.viewState.highlightedComponentId = screens[i].highlightedComponentId;
         var that = this;
-        var helpScreenData = new HelpScreenData({
-            message: screens[i].message,
-            left: screens[i].left,
-            top: screens[i].top,
-            caret: screens[i].caret,
-            currentScreenNumber: i+1,
-            totalNumberOfScreens: screens.length,
-            onNext: function() {
-                that.props.terria.helpScreen.pop();
-                if ((i+1) >= screens.length) {
-                    that.cancel();
-                } else {
-                    that.help(screens, i+1);
-                }
+        screens[i].currentScreenNumber = i+1;
+        screens[i].totalNumberOfScreens = screens.length;
+        screens[i].onNext = function() {
+            that.props.terria.helpScreens.pop();
+            if ((i+1) >= screens.length) {
+                that.cancel();
+            } else {
+                that.help(screens, i+1);
             }
-        });
-        this.props.terria.helpScreen.push(helpScreenData);
+        };
+        this.props.terria.helpScreens.push(screens[i]);
     },
 
     greyScreen() {
