@@ -60,7 +60,7 @@ const HelpPanel = React.createClass({
             caret: screens[i].caret,
             currentScreenNumber: i+1,
             totalNumberOfScreens: screens.length,
-            onCancel: function() {
+            onNext: function() {
                 that.props.terria.helpScreen.pop();
                 if ((i+1) >= screens.length) {
                     that.cancel();
