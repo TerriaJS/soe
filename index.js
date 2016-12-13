@@ -83,7 +83,7 @@ terria.start({
     // as well as the call to "updateApplicationOnHashChange" further down.
     applicationUrl: window.location,
     configUrl: 'config.json',
-    defaultTo2D: isCommonMobilePlatform(),
+    defaultTo2D: true,
     shareDataService: new ShareDataService({
         terria: terria
     })
@@ -116,7 +116,7 @@ terria.start({
         var globalBaseMaps = createGlobalBaseMapOptions(terria, configuration.bingMapsKey);
 
         var allBaseMaps = australiaBaseMaps.concat(globalBaseMaps);
-        selectBaseMap(terria, allBaseMaps, 'Bing Maps Aerial with Labels', true);
+        selectBaseMap(terria, allBaseMaps, 'Positron (Light)', true);
 
         // Show a modal disclaimer before user can do anything else.
         if (defined(terria.configParameters.globalDisclaimer)) {

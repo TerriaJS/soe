@@ -1,6 +1,13 @@
 Change Log for State of Environment Map
 =======================================
 
+### ?
+
+* Update colour scheme and use Ubuntu font
+* Update logo
+* 2D map by default
+* Positron (Light) by default
+
 ### 2016-12-08
 
 * Update catalog to show only data tagged with `SoE Map`.
