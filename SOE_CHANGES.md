@@ -1,8 +1,9 @@
 Change Log for State of Environment Map
 =======================================
 
-### ?
+### 2016-12-19
 
+* Update catalog from data.gov.au changes. Now has dust storm layers, and extra biodiversity map layers.
 * Update colour scheme and use Ubuntu font
 * Update logo
 * 2D map by default

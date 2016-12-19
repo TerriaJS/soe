@@ -59,7 +59,7 @@
     "semver": "^5.0.0",
     "style-loader": "git://github.com/TerriaJS/style-loader.git#chromeWorkaround",
     "svg-sprite-loader": "0.0.31",
-    "terriajs": "4.7.1",
+    "terriajs": "git://github.com/TerriaJS/terriajs.git#3c592918403bb3357aa112d22f7cabab76e880b4",
     "terriajs-catalog-editor": "^0.2.0",
     "terriajs-cesium": "1.25.1",
     "terriajs-schema": "latest",
