@@ -1,0 +1,55 @@
+@import '~terriajs-variables';
+@import './mixins';
+
+
+.topOverlay {
+  color: red;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  background: rgba(121,121,130,0.6);
+  z-index: 1000;
+}
+
+.leftOverlay {
+  color: blue;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  background: rgba(121,121,130,0.6);
+  z-index: 1000;
+}
+
+.rightOverlay {
+  color: green;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  background: rgba(121,121,130,0.6);
+  z-index: 1000;
+}
+
+.bottomOverlay {
+  color: pink;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  background: rgba(121,121,130,0.6);
+  z-index: 1000;
+}
+
+.isActive {
+  display: block;
+}

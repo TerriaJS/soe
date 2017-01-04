@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ObserverModelMixin from 'terriajs/lib/ReactViews/ObserveModelMixin';
-import HelpScreen from 'terriajs/lib/Models/HelpScreen';
+import HelpScreen from './HelpScreen';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import classNames from 'classnames';
 import MenuPanel from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx';
@@ -10,7 +10,7 @@ import MenuPanel from 'terriajs/lib/ReactViews/StandardUserInterface/customizabl
 import Styles from './help.scss';
 import NotificationStyles from './notification-window.scss';
 import DropdownStyles from 'terriajs/lib/ReactViews/Map/Panels/panel.scss';
-import Icon from 'terriajs/lib/ReactViews/Icon.jsx';
+import helpIcon from '../../wwwroot/images/icons/help.svg';
 
 const HelpPanel = React.createClass({
     mixins: [ObserverModelMixin],
@@ -18,7 +18,8 @@ const HelpPanel = React.createClass({
     propTypes: {
         terria: React.PropTypes.object,
         isOpen: React.PropTypes.bool,
-        viewState: React.PropTypes.object.isRequired
+        viewState: React.PropTypes.object.isRequired,
+        helpScreen: React.PropTypes.object
     },
 
     getDefaultProps() {
@@ -44,25 +45,25 @@ const HelpPanel = React.createClass({
         overlay.style.display = "none";
         var clearOverlay = document.getElementById("clearoverlay");
         clearOverlay.style.display = "none";
-
-        this.props.viewState.highlightedComponentId = '';
-        this.props.terria.helpScreens.pop();
+        this.props.helpScreen.helpScreen = undefined;
     },
 
     help(screens, i) {
-        this.props.viewState.highlightedComponentId = screens[i].highlightedComponentId;
         var that = this;
+        var highlightedElement = document.getElementsByClassName(screens[i].highlightedComponentId);
+        var rect = highlightedElement[0].getBoundingClientRect();
+        console.log("Add data rect");
+        console.log(rect);
         screens[i].currentScreenNumber = i+1;
         screens[i].totalNumberOfScreens = screens.length;
         screens[i].onNext = function() {
-            that.props.terria.helpScreens.pop();
             if ((i+1) >= screens.length) {
                 that.cancel();
             } else {
                 that.help(screens, i+1);
             }
         };
-        this.props.terria.helpScreens.push(screens[i]);
+        this.props.helpScreen.helpScreen = screens[i];
     },
 
     greyScreen() {
@@ -76,22 +77,27 @@ const HelpPanel = React.createClass({
     },
 
     helpLoadData() {
-        this.greyScreen();
+//this.greyScreen();
         var screenOneMessage = "<div><strong>Click here to:</strong><ul><li>Browse all of the additional data sets within the State of the Environment catalogue</li><li>Add selected data sets to the map</li></ul></div>";
-        var screenOneRect = this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents['addData'].getBoundingClientRect();
+        var screenOneComponentId = 'tjs-side-panel__button tjs-_buttons__btn tjs-_buttons__btn-primary';
+        var highlightedElement = document.getElementsByClassName(screenOneComponentId);
+        var screenOneRect = highlightedElement[0].getBoundingClientRect();
 
         var screenTwoMessage = "<div>All of your active data sets will appear in your data workbench.</div>";
-        var screenTwoRect = this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents && this.props.viewState.highlightedComponents['dataSets'].getBoundingClientRect();
+        var screenTwoComponentId = 'tjs-side-panel__workbenchEmpty';
+        highlightedElement = document.getElementsByClassName(screenTwoComponentId);
+        var screenTwoRect = highlightedElement[0].getBoundingClientRect();
+
         this.help([new HelpScreen({
                 message: screenOneMessage,
-                highlightedComponentId: 'addData',
+                highlightedComponentId: screenOneComponentId,
                 left: screenOneRect.left,
                 top: screenOneRect.bottom + 10,
                 caret: 'top'
               }),
               new HelpScreen({
                 message: screenTwoMessage,
-                highlightedComponentId: 'dataSets',
+                highlightedComponentId: screenTwoComponentId,
                 left: screenTwoRect.right + 15,
                 top: screenTwoRect.top - 3,
                 caret: 'left'
@@ -103,7 +109,7 @@ const HelpPanel = React.createClass({
             btn: Styles.btnShare,
             outer: Styles.sharePanel,
             inner: Styles.dropdownInner,
-            icon: 'help'
+            icon: helpIcon
         };
 
         return (

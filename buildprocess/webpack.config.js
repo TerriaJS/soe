@@ -40,8 +40,14 @@ module.exports = function(devMode, hot) {
                     }
                 },
                 {
+                    test: /\.svg$/,
+                    include: path.resolve(__dirname, '..', 'wwwroot', 'images', 'icons'),
+                    loader: require.resolve('svg-sprite-loader')
+                },
+                {
                     test: /\.(png|jpg|svg|gif)$/,
                     include: path.resolve(__dirname, '..', 'wwwroot', 'images'),
+                    exclude: path.resolve(__dirname, '..', 'wwwroot', 'images', 'icons'),
                     loader: require.resolve('url-loader'),
                     query: {
                         limit: 8192
@@ -76,7 +82,7 @@ module.exports = function(devMode, hot) {
         ],
        resolve: {
             alias: {}
-        }        
+        }
     };
     config.resolve.alias['terriajs-variables'] = require.resolve('../lib/Styles/variables.scss');
     return configureWebpackForTerriaJS(path.dirname(require.resolve('terriajs/package.json')), config, devMode, hot, ExtractTextPlugin);
