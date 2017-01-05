@@ -36,7 +36,7 @@ import render from './lib/Views/render';
 import CustomFeatureInfoButton from './lib/Views/CustomFeatureInfoButton';
 
 import FeatureInfoSection from 'terriajs/lib/ReactViews/FeatureInfo/FeatureInfoSection';
-import knockout from 'terriajs-cesium/Source/ThirdParty/knockout';
+import getSoeHelpSequences from './lib/Views/getSoeHelpSequences';
 
 // Tell the OGR catalog item where to find its conversion service.  If you're not using OgrCatalogItem you can remove this.
 OgrCatalogItem.conversionServiceBaseUrl = configuration.conversionServiceBaseUrl;
@@ -145,11 +145,8 @@ terria.start({
             }
         }
 
-        var helpScreen = {
-            helpScreen: undefined
-        };
-
-        render(terria, allBaseMaps, viewState, helpScreen);
+        var helpSequences = getSoeHelpSequences();
+        render(terria, allBaseMaps, viewState, helpSequences);
     } catch (e) {
         console.error(e);
         console.error(e.stack);

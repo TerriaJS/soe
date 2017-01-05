@@ -11,6 +11,7 @@ import Styles from './help.scss';
 import NotificationStyles from './notification-window.scss';
 import DropdownStyles from 'terriajs/lib/ReactViews/Map/Panels/panel.scss';
 import helpIcon from '../../wwwroot/images/icons/help.svg';
+import HelpSequences from './HelpSequences';
 
 const HelpPanel = React.createClass({
     mixins: [ObserverModelMixin],
@@ -19,7 +20,7 @@ const HelpPanel = React.createClass({
         terria: React.PropTypes.object,
         isOpen: React.PropTypes.bool,
         viewState: React.PropTypes.object.isRequired,
-        helpScreen: React.PropTypes.object
+        helpSequences: React.PropTypes.object
     },
 
     getDefaultProps() {
@@ -45,15 +46,15 @@ const HelpPanel = React.createClass({
         overlay.style.display = "none";
         var clearOverlay = document.getElementById("clearoverlay");
         clearOverlay.style.display = "none";
-        this.props.helpScreen.helpScreen = undefined;
+        this.props.helpSequences.currentScreen = undefined;
     },
 
     help(screens, i) {
         var that = this;
         var highlightedElement = document.getElementsByClassName(screens[i].highlightedComponentId);
-        var rect = highlightedElement[0].getBoundingClientRect();
-        console.log("Add data rect");
-        console.log(rect);
+        var screenRect = highlightedElement[0].getBoundingClientRect();
+
+        screens[i].rectangle = screenRect;
         screens[i].currentScreenNumber = i+1;
         screens[i].totalNumberOfScreens = screens.length;
         screens[i].onNext = function() {
@@ -63,7 +64,7 @@ const HelpPanel = React.createClass({
                 that.help(screens, i+1);
             }
         };
-        this.props.helpScreen.helpScreen = screens[i];
+        this.props.helpSequences.currentScreen = screens[i];
     },
 
     greyScreen() {
@@ -77,31 +78,8 @@ const HelpPanel = React.createClass({
     },
 
     helpLoadData() {
-//this.greyScreen();
-        var screenOneMessage = "<div><strong>Click here to:</strong><ul><li>Browse all of the additional data sets within the State of the Environment catalogue</li><li>Add selected data sets to the map</li></ul></div>";
-        var screenOneComponentId = 'tjs-side-panel__button tjs-_buttons__btn tjs-_buttons__btn-primary';
-        var highlightedElement = document.getElementsByClassName(screenOneComponentId);
-        var screenOneRect = highlightedElement[0].getBoundingClientRect();
-
-        var screenTwoMessage = "<div>All of your active data sets will appear in your data workbench.</div>";
-        var screenTwoComponentId = 'tjs-side-panel__workbenchEmpty';
-        highlightedElement = document.getElementsByClassName(screenTwoComponentId);
-        var screenTwoRect = highlightedElement[0].getBoundingClientRect();
-
-        this.help([new HelpScreen({
-                message: screenOneMessage,
-                highlightedComponentId: screenOneComponentId,
-                left: screenOneRect.left,
-                top: screenOneRect.bottom + 10,
-                caret: 'top'
-              }),
-              new HelpScreen({
-                message: screenTwoMessage,
-                highlightedComponentId: screenTwoComponentId,
-                left: screenTwoRect.right + 15,
-                top: screenTwoRect.top - 3,
-                caret: 'left'
-              })], 0);
+        this.help(this.props.helpSequences.sequences.loadData, 0);
+        //this.greyScreen();
     },
 
     render() {
@@ -154,5 +132,6 @@ const HelpPanel = React.createClass({
         );
     }
 });
+
 
 export default HelpPanel;
