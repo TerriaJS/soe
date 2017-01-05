@@ -11,7 +11,6 @@ import Styles from './help.scss';
 import NotificationStyles from './notification-window.scss';
 import DropdownStyles from 'terriajs/lib/ReactViews/Map/Panels/panel.scss';
 import helpIcon from '../../wwwroot/images/icons/help.svg';
-import HelpSequences from './HelpSequences';
 
 const HelpPanel = React.createClass({
     mixins: [ObserverModelMixin],
@@ -42,10 +41,6 @@ const HelpPanel = React.createClass({
     },
 
     cancel() {
-        var overlay = document.getElementById("overlay");
-        overlay.style.display = "none";
-        var clearOverlay = document.getElementById("clearoverlay");
-        clearOverlay.style.display = "none";
         this.props.helpSequences.currentScreen = undefined;
     },
 
@@ -67,21 +62,6 @@ const HelpPanel = React.createClass({
         this.props.helpSequences.currentScreen = screens[i];
     },
 
-    greyScreen() {
-        var overlay = document.getElementById("overlay");
-        overlay.style.display = "block";
-
-        // To protect any elements we shift above the overlay from being clicked on, because they're for display only.
-        var clearOverlay = document.getElementById("clearoverlay");
-        clearOverlay.style.display = "block";
-        clearOverlay.onclick = this.cancel;
-    },
-
-    helpLoadData() {
-        this.help(this.props.helpSequences.sequences.loadData, 0);
-        //this.greyScreen();
-    },
-
     render() {
         const dropdownTheme = {
             btn: Styles.btnShare,
@@ -99,32 +79,16 @@ const HelpPanel = React.createClass({
                        smallScreen={this.props.viewState.useSmallScreenInterface}>
                 <If condition={this.state.isOpen}>
                     <div className={classNames(Styles.viewer, DropdownStyles.section)}>
-                        <label className={DropdownStyles.heading}> What would you like to do? </label>
+                        <label className={DropdownStyles.heading}>{this.props.helpSequences.menuTitle}</label>
                         <ul className={Styles.viewerSelector}>
-                            <li key={0} className={Styles.listItem}>
-                                <button onClick={this.helpLoadData}
-                                        className={Styles.btnViewer}>
-                                    Load data from the catalogue
-                                </button>
-                            </li>
-                            <li key={1} className={Styles.listItem}>
-                                <button onClick={this.help}
-                                        className={Styles.btnViewer}>
-                                    Load data from a file or external source
-                                </button>
-                            </li>
-                            <li key={2} className={Styles.listItem}>
-                                <button onClick={this.helpMapSettings}
-                                        className={Styles.btnViewer}>
-                                    Change the map settings
-                                </button>
-                            </li>
-                            <li key={3} className={Styles.listItem}>
-                                <button onClick={this.help}
-                                        className={Styles.btnViewer}>
-                                    Share/Export/Print my map
-                                </button>
-                            </li>
+                            <For each="sequence" index="i" of={this.props.helpSequences.sequences}>
+                                <li key={i} className={Styles.listItem}>
+                                    <button onClick={this.help.bind(this, {sequence}.sequence.screens, 0)}
+                                            className={Styles.btnViewer}>
+                                        {sequence.title}
+                                    </button>
+                                </li>
+                            </For>
                         </ul>
                     </div>
                 </If>

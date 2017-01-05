@@ -5,6 +5,7 @@ import React from 'react';
 import parseCustomHtmlToReact from 'terriajs/lib/ReactViews/Custom/parseCustomHtmlToReact';
 import Styles from './obscure-overlay.scss';
 import classNames from 'classnames';
+import defined from 'terriajs-cesium/Source/Core/defined';
 
 const ObscureOverlay = React.createClass({
     mixins: [ObserverModelMixin],
@@ -15,29 +16,50 @@ const ObscureOverlay = React.createClass({
         helpSequences: React.PropTypes.object
     },
 
+    cancel() {
+        this.props.helpSequences.currentScreen = undefined;
+    },
+
     render() {
         const helpScreen = this.props.helpSequences.currentScreen;
+        if (!defined(helpScreen)) {
+            return false;
+        }
 
-        //topDiv = (xMin, yMin), (xMax, yMin), (xMin, highlightedElementTop), (xMax, highlightedElementTop)
-        const topOverlayPositionLeft = 0;
-        const topOverlayPositionTop = 0;
-        const topOverlayHeight = "calc(100% - " + helpScreen.rectangle.top;
+        // Top
+        const topOverlayPositionLeft = 0 + "px";
+        const topOverlayPositionTop = 0 + "px";
+        const topOverlayHeight = helpScreen.rectangle.top + "px";
         const topOverlayWidth = "100%";
 
-        //leftDiv = (xMin, highlightedElementTop), (highlightedElementLeft, highlightedElementTop), (xMin, highlightedElementBottom), (highlightedElementLeft, highlightedElementBottom)
+        // Left
+        const leftOverlayPositionLeft = 0 + "px";
+        const leftOverlayPositionTop = helpScreen.rectangle.top + "px";
+        const leftOverlayHeight = helpScreen.rectangle.height + "px";
+        const leftOverlayWidth = helpScreen.rectangle.left + "px";
 
-        //rightDiv = (highlightedElementRight, highlightedElementTop), (xMax, highlightedElementTop), (highlightedElementRight, highlightedElementBottom), (xMax, highlightedElementBottom)
+        // Right
+        const rightOverlayPositionLeft = helpScreen.rectangle.right + "px";
+        const rightOverlayPositionTop = helpScreen.rectangle.top + "px";
+        const rightOverlayHeight = helpScreen.rectangle.height + "px";
+        const rightOverlayWidth = "100%";
 
-        //bottomDiv = (xMin, highlightedElementBottom), (xMax, highlightedElementBottom), (xMin, yMax), (xMax, yMax)
+        // Bottom
+        const bottomOverlayPositionLeft = 0 + "px";
+        const bottomOverlayPositionTop = helpScreen.rectangle.bottom + "px";
+        const bottomOverlayHeight = "100%";
+        const bottomOverlayWidth = "100%";
+
         const windowClass = classNames(Styles.window, {
             [Styles.isActive]: helpScreen
         });
         return (
             <div className={windowClass} aria-hidden={ !helpScreen }>
-                <div style={{left: topOverlayPositionLeft + 'px', top: topOverlayPositionTop + 'px', width: topOverlayWidth, height: topOverlayHeight }} className={Styles.topOverlay}></div>
-                <div className={Styles.leftOverlay}></div>
-                <div className={Styles.rightOverlay}></div>
-                <div className={Styles.bottomOverlay}></div>
+                <div className={Styles.topOverlay} style={{left: topOverlayPositionLeft, top: topOverlayPositionTop, width: topOverlayWidth, height: topOverlayHeight }} onClick={this.cancel}></div>
+                <div className={Styles.leftOverlay} style={{left: leftOverlayPositionLeft, top: leftOverlayPositionTop, width: leftOverlayWidth, height: leftOverlayHeight }} onClick={this.cancel}></div>
+                <div className={Styles.rightOverlay} style={{left: rightOverlayPositionLeft, top: rightOverlayPositionTop, width: rightOverlayWidth, height: rightOverlayHeight }} onClick={this.cancel}></div>
+                <div className={Styles.bottomOverlay} style={{left: bottomOverlayPositionLeft, top: bottomOverlayPositionTop, width: bottomOverlayWidth, height: bottomOverlayHeight }} onClick={this.cancel}></div>
+                <div className={Styles.clearOverlay} onClick={this.cancel}></div>
             </div>);
     }
 });

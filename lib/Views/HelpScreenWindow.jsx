@@ -5,6 +5,8 @@ import React from 'react';
 import parseCustomHtmlToReact from 'terriajs/lib/ReactViews/Custom/parseCustomHtmlToReact';
 import Styles from './help-screen-window.scss';
 import classNames from 'classnames';
+import defined from 'terriajs-cesium/Source/Core/defined';
+import HelpSequences from './HelpSequences';
 
 const HelpScreenWindow = React.createClass({
     mixins: [ObserverModelMixin],
@@ -16,7 +18,6 @@ const HelpScreenWindow = React.createClass({
     },
 
     render() {
-        debugger;
         const currentScreen = this.props.helpSequences.currentScreen;
 
         const windowClass = classNames(Styles.window, {

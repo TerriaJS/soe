@@ -13,13 +13,15 @@ import './global.scss';
 
 export default function UserInterface(props) {
     return (
+        <div>
         <StandardUserInterface {... props} version={version}>
             <Menu>
                 <Help helpSequences={props.helpSequences} viewState={props.viewState} terria={props.terria} />
                 <MenuItem caption="About" href="about.html" key="about-link"/>
-                <HelpScreenWindow helpSequences={props.helpSequences} terria={props.terria} viewState={props.viewState}/>
-                <ObscureOverlay helpSequences={props.helpSequences} terria={props.terria} viewState={props.viewState}/>
             </Menu>
         </StandardUserInterface>
+        <ObscureOverlay helpSequences={props.helpSequences} terria={props.terria} viewState={props.viewState}/>
+        <HelpScreenWindow helpSequences={props.helpSequences} terria={props.terria} viewState={props.viewState}/>
+        </div>
     );
 }
