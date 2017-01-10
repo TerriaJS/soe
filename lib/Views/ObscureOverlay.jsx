@@ -17,7 +17,7 @@ const ObscureOverlay = React.createClass({
     },
 
     cancel() {
-        this.props.helpSequences.currentScreen = undefined;
+        this.props.helpSequences.cancel = true;
     },
 
     render() {

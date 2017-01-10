@@ -28,6 +28,10 @@ const HelpPanel = React.createClass({
             if (!defined(that.state.screens)) {
                 return;
             }
+            if (that.props.helpSequences.cancel) {
+                // Has been cancelled from somewhere else. Abort!
+                that.cancel();
+            }
             var i = that.state.index;
             var currentScreen = that.state.screens[i];
             if (defined(that.state.previousRectangle) && that.state.previousRectangle === that.state.currentRectangle) {
@@ -96,6 +100,7 @@ const HelpPanel = React.createClass({
     },
 
     help(screens, i) {
+        this.props.helpSequences.cancel = false;
         this.setState({
             screens: screens,
             index: i,
@@ -119,6 +124,7 @@ const HelpPanel = React.createClass({
                        viewState={this.props.viewState}
                        btnTitle="get help"
                        onOpenChanged={this.onOpenChanged}
+                       forceClosed={defined(this.props.helpSequences.currentScreen)}
                        smallScreen={this.props.viewState.useSmallScreenInterface}>
                 <If condition={this.state.isOpen}>
                     <div className={classNames(Styles.viewer, DropdownStyles.section)}>
