@@ -23,7 +23,6 @@ import raiseErrorToUser from 'terriajs/lib/Models/raiseErrorToUser';
 import registerAnalytics from 'terriajs/lib/Models/registerAnalytics';
 import registerCatalogMembers from 'terriajs/lib/Models/registerCatalogMembers';
 import registerCustomComponentTypes from 'terriajs/lib/ReactViews/Custom/registerCustomComponentTypes';
-import registerKnockoutBindings from 'terriajs/lib/Core/registerKnockoutBindings';
 import Terria from 'terriajs/lib/Models/Terria';
 import updateApplicationOnHashChange from 'terriajs/lib/ViewModels/updateApplicationOnHashChange';
 import updateApplicationOnMessageFromParentWindow from 'terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow';
@@ -39,9 +38,6 @@ import FeatureInfoSection from 'terriajs/lib/ReactViews/FeatureInfo/FeatureInfoS
 
 // Tell the OGR catalog item where to find its conversion service.  If you're not using OgrCatalogItem you can remove this.
 OgrCatalogItem.conversionServiceBaseUrl = configuration.conversionServiceBaseUrl;
-
-// Register custom Knockout.js bindings.  If you're not using the TerriaJS user interface, you can remove this.
-registerKnockoutBindings();
 
 // Add custom button to feature info panel
 FeatureInfoSection.extraComponents.push(CustomFeatureInfoButton);
