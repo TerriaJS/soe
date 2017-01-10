@@ -30,10 +30,11 @@ const HelpScreenWindow = React.createClass({
 
         const caretTop = currentScreen && currentScreen.caretTop;
         const caretLeft = currentScreen && currentScreen.caretLeft;
-        // 133px
+
+        const width = currentScreen && currentScreen.widthOverride;
 
         return (
-            <div style={{left: positionLeft + 'px', top: positionTop + 'px'}} className={windowClass} aria-hidden={ !currentScreen }>
+            <div style={{left: positionLeft + 'px', top: positionTop + 'px', width: width + 'px'}} className={windowClass} aria-hidden={ !currentScreen }>
               <span style={{left: caretLeft + 'px', top: caretTop + 'px'}} className={Styles.caret}/>
               <div className={Styles.content}>
                   {currentScreen && parseCustomHtmlToReact(currentScreen.message())}
