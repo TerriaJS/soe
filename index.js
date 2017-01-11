@@ -17,7 +17,6 @@ var configuration = {
 // checkBrowserCompatibility('ui');
 import GoogleAnalytics from 'terriajs/lib/Core/GoogleAnalytics';
 import ShareDataService from 'terriajs/lib/Models/ShareDataService';
-import isCommonMobilePlatform from 'terriajs/lib/Core/isCommonMobilePlatform';
 import OgrCatalogItem from 'terriajs/lib/Models/OgrCatalogItem';
 import raiseErrorToUser from 'terriajs/lib/Models/raiseErrorToUser';
 import registerAnalytics from 'terriajs/lib/Models/registerAnalytics';

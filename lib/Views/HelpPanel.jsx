@@ -7,8 +7,7 @@ import defined from 'terriajs-cesium/Source/Core/defined';
 import classNames from 'classnames';
 import MenuPanel from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx';
 
-import Styles from './help.scss';
-import NotificationStyles from './notification-window.scss';
+import Styles from './help-panel.scss';
 import DropdownStyles from 'terriajs/lib/ReactViews/Map/Panels/panel.scss';
 import helpIcon from '../../wwwroot/images/icons/help.svg';
 
@@ -16,14 +15,12 @@ const HelpPanel = React.createClass({
     mixins: [ObserverModelMixin],
 
     propTypes: {
-        terria: React.PropTypes.object,
-        isOpen: React.PropTypes.bool,
         viewState: React.PropTypes.object.isRequired,
         helpSequences: React.PropTypes.object
     },
 
     componentWillMount() {
-        var that = this;
+        const that = this;
         setInterval(function() {
             if (!defined(that.state.screens)) {
                 return;
@@ -32,8 +29,8 @@ const HelpPanel = React.createClass({
                 // Has been cancelled from somewhere else. Abort!
                 that.cancel();
             }
-            var i = that.state.index;
-            var currentScreen = that.state.screens[i];
+            const i = that.state.index;
+            const currentScreen = that.state.screens[i];
             if (defined(that.state.previousRectangle) && that.state.previousRectangle === that.state.currentRectangle) {
                 // Rectangle hasn't changed so we don't want to redraw everything, but update rectangle in case it has changed now.
                 updateCurrentRectangle(that, currentScreen);
@@ -65,12 +62,6 @@ const HelpPanel = React.createClass({
                 that.setState({previousRectangle: that.state.currentRectangle});
             }
         }, 10);
-    },
-
-    getDefaultProps() {
-        return {
-            isOpen: false
-        };
     },
 
     getInitialState() {
@@ -147,9 +138,9 @@ const HelpPanel = React.createClass({
 });
 
 function updateCurrentRectangle(component, currentScreen) {
-    var highlightedElement = document.getElementsByClassName(currentScreen.highlightedComponentId);
+    const highlightedElement = document.getElementsByClassName(currentScreen.highlightedComponentId);
     if (defined(highlightedElement[0])) {
-        var screenRect = highlightedElement[0].getBoundingClientRect();
+        const screenRect = highlightedElement[0].getBoundingClientRect();
         component.setState({currentRectangle: screenRect});
     }
 };

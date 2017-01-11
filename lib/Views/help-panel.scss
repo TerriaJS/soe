@@ -1,5 +1,5 @@
 @import '~terriajs-variables';
-@import './mixins';
+@import '~terriajs/lib/Sass/common/_mixins';
 
 .share-panel {
   font-size: $font-size-mid-small;

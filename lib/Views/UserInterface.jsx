@@ -4,7 +4,7 @@ import version from '../../version';
 
 import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
 import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
-import Help from './Help';
+import HelpPanel from './HelpPanel';
 import { Menu } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
 import HelpScreenWindow from './HelpScreenWindow.jsx';
 import ObscureOverlay from './ObscureOverlay.jsx';
@@ -16,7 +16,7 @@ export default function UserInterface(props) {
         <div>
         <StandardUserInterface {... props} version={version}>
             <Menu>
-                <Help helpSequences={props.helpSequences} viewState={props.viewState} terria={props.terria} />
+                <HelpPanel helpSequences={props.helpSequences} viewState={props.viewState}/>
                 <MenuItem caption="About" href="about.html" key="about-link"/>
             </Menu>
         </StandardUserInterface>
