@@ -7,12 +7,15 @@ import Styles from './obscure-overlay.scss';
 import classNames from 'classnames';
 import defined from 'terriajs-cesium/Source/Core/defined';
 
+/**
+* This provides five panels. Four are rectangle elements that go above, left, right, and below the highlighted element
+* to grey out the rest of the screen. A fifth panel, which is clear, covers the whole screen to prevent the highlighted
+* element from being selectable.
+*/
 const ObscureOverlay = React.createClass({
     mixins: [ObserverModelMixin],
 
     propTypes: {
-        terria: React.PropTypes.object,
-        viewState: React.PropTypes.object,
         helpSequences: React.PropTypes.object
     },
 

@@ -20,8 +20,8 @@ export default function UserInterface(props) {
                 <MenuItem caption="About" href="about.html" key="about-link"/>
             </Menu>
         </StandardUserInterface>
-        <ObscureOverlay helpSequences={props.helpSequences} terria={props.terria} viewState={props.viewState}/>
-        <HelpScreenWindow helpSequences={props.helpSequences} terria={props.terria} viewState={props.viewState}/>
+        <ObscureOverlay helpSequences={props.helpSequences}/>
+        <HelpScreenWindow helpSequences={props.helpSequences}/>
         </div>
     );
 }

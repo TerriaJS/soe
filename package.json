@@ -49,7 +49,7 @@
     "redbox-react": "^1.2.3",
     "sass-loader": "^4.0.1",
     "semver": "^5.0.0",
-    "style-loader": "git://github.com/TerriaJS/style-loader#chromeWorkaround.git",
+    "style-loader": "git://github.com/TerriaJS/style-loader.git#chromeWorkaround",
     "svg-sprite-loader": "0.1.2",
     "terriajs": "^4.8.0",
     "terriajs-catalog-editor": "^0.2.0",

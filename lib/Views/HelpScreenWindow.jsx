@@ -12,8 +12,6 @@ const HelpScreenWindow = React.createClass({
     mixins: [ObserverModelMixin],
 
     propTypes: {
-        terria: React.PropTypes.object,
-        viewState: React.PropTypes.object,
         helpSequences: React.PropTypes.object
     },
 
@@ -24,14 +22,13 @@ const HelpScreenWindow = React.createClass({
             [Styles.isActive]: currentScreen
         });
         const buttonText = currentScreen && currentScreen.totalNumberOfScreens === currentScreen.currentScreenNumber ? 'DONE' : 'NEXT';
-        calculatePosition(currentScreen);
-        const positionLeft = currentScreen && currentScreen.left;
-        const positionTop = currentScreen && currentScreen.top;
+        const positionLeft = currentScreen && calculateLeftPosition(currentScreen);
+        const positionTop = currentScreen && calculateTopPosition(currentScreen);
 
         const caretTop = currentScreen && currentScreen.caretTop;
         const caretLeft = currentScreen && currentScreen.caretLeft;
 
-        const width = currentScreen && currentScreen.widthOverride;
+        const width = currentScreen && currentScreen.width;
 
         return (
             <div style={{left: positionLeft + 'px', top: positionTop + 'px', width: width + 'px'}} className={windowClass} aria-hidden={ !currentScreen }>
@@ -51,36 +48,51 @@ const HelpScreenWindow = React.createClass({
 });
 
 /**
+ * Work out the screen pixel value for left positioning based on helpScreen parameters.
  * @private
  */
-function calculatePosition(helpScreen) {
+function calculateLeftPosition(helpScreen) {
     if (!defined(helpScreen)) {
         return;
     }
     const screenRect = helpScreen.rectangle;
+    let leftPosition = 0;
     if (helpScreen.positionLeft === HelpSequences.RelativePosition.RECT_LEFT) {
-        helpScreen.left = screenRect.left;
+        leftPosition = screenRect.left;
     } else if (helpScreen.positionLeft === HelpSequences.RelativePosition.RECT_RIGHT) {
-        helpScreen.left = screenRect.right;
+        leftPosition = screenRect.right;
     } else if (helpScreen.positionLeft === HelpSequences.RelativePosition.RECT_TOP) {
-        helpScreen.left = screenRect.top;
+        leftPosition = screenRect.top;
     } else if (helpScreen.positionLeft === HelpSequences.RelativePosition.RECT_BOTTOM) {
-        helpScreen.left = screenRect.bottom;
+        leftPosition = screenRect.bottom;
     }
 
-    if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_LEFT) {
-        helpScreen.top = screenRect.left;
-    } else if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_RIGHT) {
-        helpScreen.top = screenRect.right;
-    } else if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_TOP) {
-        helpScreen.top = screenRect.top;
-    } else if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_BOTTOM) {
-        helpScreen.top = screenRect.bottom;
-    }
-
-    helpScreen.left += helpScreen.offsetLeft;
-    helpScreen.top += helpScreen.offsetTop;
+    leftPosition += helpScreen.offsetLeft;
+    return leftPosition;
 };
 
+/**
+ * Work out the screen pixel value for top positioning based on helpScreen parameters.
+ * @private
+ */
+function calculateTopPosition(helpScreen) {
+    if (!defined(helpScreen)) {
+        return;
+    }
+    const screenRect = helpScreen.rectangle;
+    let topPosition = 0;
+    if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_LEFT) {
+        topPosition = screenRect.left;
+    } else if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_RIGHT) {
+        topPosition = screenRect.right;
+    } else if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_TOP) {
+        topPosition = screenRect.top;
+    } else if (helpScreen.positionTop === HelpSequences.RelativePosition.RECT_BOTTOM) {
+        topPosition = screenRect.bottom;
+    }
+
+    topPosition += helpScreen.offsetTop;
+    return topPosition;
+};
 
 module.exports = HelpScreenWindow;
