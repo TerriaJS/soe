@@ -35,6 +35,7 @@ import CustomFeatureInfoButton from './lib/Views/CustomFeatureInfoButton';
 
 import FeatureInfoSection from 'terriajs/lib/ReactViews/FeatureInfo/FeatureInfoSection';
 import getSoeHelpSequences from './lib/Views/getSoeHelpSequences';
+import HelpViewState from 'terriajs/lib/ReactViewModels/HelpViewState';
 
 // Tell the OGR catalog item where to find its conversion service.  If you're not using OgrCatalogItem you can remove this.
 OgrCatalogItem.conversionServiceBaseUrl = configuration.conversionServiceBaseUrl;
@@ -141,7 +142,8 @@ terria.start({
         }
 
         var helpSequences = getSoeHelpSequences();
-        render(terria, allBaseMaps, viewState, helpSequences);
+        var helpViewState = new HelpViewState();
+        render(terria, allBaseMaps, viewState, helpSequences, helpViewState);
     } catch (e) {
         console.error(e);
         console.error(e.stack);

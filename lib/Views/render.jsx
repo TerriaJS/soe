@@ -2,11 +2,12 @@ import ReactDOM from 'react-dom';
 import RedBox from 'redbox-react';
 import React from 'react';
 
-export default function renderUi(terria, allBaseMaps, viewState, helpSequences) {
+export default function renderUi(terria, allBaseMaps, viewState, helpSequences, helpViewState) {
   let render = () => {
     const UI = require('./UserInterface').default;
     ReactDOM.render(<UI terria={terria} allBaseMaps={allBaseMaps}
-                        viewState={viewState} helpSequences={helpSequences}/>, document.getElementById('ui'));
+                    viewState={viewState} helpSequences={helpSequences} helpViewState={helpViewState}/>,
+                    document.getElementById('ui'));
   };
 
   if (module.hot && process.env.NODE_ENV !== "production") {
