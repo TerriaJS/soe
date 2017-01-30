@@ -1,6 +1,10 @@
 Change Log for State of Environment Map
 =======================================
 
+### 2017-01-31
+
+* Help screens added. `Help` button in top right corner provides step by step help for some SOE specific tasks.
+
 ### 2017-01-17
 
 * Code that generates SOE config file removed, as is generated soe config file.
