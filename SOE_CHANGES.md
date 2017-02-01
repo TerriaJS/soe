@@ -1,6 +1,11 @@
 Change Log for State of Environment Map
 =======================================
 
+### 2017-01-??
+
+* Updated help video so that it plays in more browsers
+* Removed about button
+
 ### 2017-01-31
 
 * Help screens added. `Help` button in top right corner provides step by step help for some SOE specific tasks.

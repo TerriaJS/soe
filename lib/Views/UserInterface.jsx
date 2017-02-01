@@ -16,7 +16,6 @@ export default function UserInterface(props) {
         <StandardUserInterface {... props} version={version}>
             <Menu>
                 <HelpMenuPanel helpViewState={props.helpViewState} helpSequences={props.helpSequences} viewState={props.viewState}/>
-                <MenuItem caption="About" href="about.html" key="about-link"/>
             </Menu>
         </StandardUserInterface>
         <HelpOverlay helpViewState={props.helpViewState} helpSequences={props.helpSequences} viewState={props.viewState}/>
