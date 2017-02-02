@@ -5,6 +5,7 @@ Change Log for State of Environment Map
 
 * Updated help video so that it plays in more browsers
 * Removed about button
+* Updated help email to soe@environment.gov.au
 
 ### 2017-01-31
 
