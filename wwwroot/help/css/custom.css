@@ -82,7 +82,7 @@ ul {
 
 .side-nav .active {
   font-weight: bold;
-} 
+}
 
 .nav-header {
   font-size: 16px;
@@ -95,8 +95,8 @@ ul {
 }
 
 .navbar-inverse {
-  background-color: #353B43;
-  border-color: #080808; 
+  background-color: #575757;
+  border-color: #080808;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -180,6 +180,13 @@ h2 > a {
   color: #484848;
 }
 
+a {
+  color: #727272;
+}
+
+a:hover, a:visited, a:focus {
+  color: #88342b;
+}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -198,7 +205,7 @@ h2 > a {
 @media (min-width: @screen-md-min) { ... }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 .navbar {
   min-height: 80px;
@@ -221,7 +228,7 @@ h2 > a {
 }
 
 .navbar-brand img {
-  width: 170px;
+  width: 220px;
 }
 
 .content {
