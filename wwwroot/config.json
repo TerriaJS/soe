@@ -33,7 +33,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
             "",
-            "<a target=\"_blank\" href=\"http://doesoeahlgge33pv.devcloud.acquia-sites.com/\"><img src=\"images/logo.png\" height=\"44px\" title=\"Version: {{version}}\" /></a>",
+            "<a target=\"_blank\" href=\"https://soe.environment.gov.au/\"><img src=\"images/logo.png\" height=\"44px\" title=\"Version: {{version}}\" /></a>",
             ""
         ],
         // Shown when things go wrong.
