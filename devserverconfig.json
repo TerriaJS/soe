@@ -21,11 +21,6 @@
         "gov",
         "gov.uk",
         "gov.nz"
-    ],
-
-    "basicAuthentication": {
-        "username": "soe",
-        "password": "eos"
-    }
+    ]
 }
 
