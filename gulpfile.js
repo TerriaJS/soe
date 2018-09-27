@@ -48,8 +48,7 @@ gulp.task('release-app', ['check-terriajs-dependencies', 'write-version'], funct
 
     runWebpack(webpack, Object.assign({}, webpackConfig, {
         plugins: [
-            new webpack.optimize.UglifyJsPlugin(),
-            new webpack.optimize.DedupePlugin(),
+            new webpack.optimize.UglifyJsPlugin({sourceMap: true}),
             new webpack.optimize.OccurrenceOrderPlugin(),
         ].concat(webpackConfig.plugins || [])
     }), done);
@@ -179,7 +178,11 @@ gulp.task('make-package', function() {
         fs.writeFileSync(path.join(workingDir, 'wwwroot', 'config.json'), JSON.stringify(productionClientConfig, undefined, '  '));
     }
 
-    var tarResult = spawnSync('tar', [
+    // if we are on OSX make sure to use gtar for compatibility with Linux
+    // otherwise we see lots of error message when extracting with GNU tar
+    var tar = /^darwin/.test(process.platform) ? 'gtar' : 'tar';
+
+    var tarResult = spawnSync(tar, [
         'czf',
         path.join('..', 'packages', packageName + '.tar.gz')
     ].concat(fs.readdirSync(workingDir)), {
