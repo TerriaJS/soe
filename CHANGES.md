@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 2019-05-xx
+
+* Fix the hot reload script.
+
 ### 2017-XX-XX
 
 * Use `gtar` when building `make-package` on OSX to create GNU tar compatible tarballs.
