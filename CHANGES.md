@@ -1,6 +1,8 @@
 Change Log
 ==========
 
+### Next Release
+
 ### 2019-05-xx
 
 * Fix the hot reload script.
